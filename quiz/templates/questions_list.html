@@ -1,33 +1,44 @@
-{% extends 'base.html' %}
-
-{% block title %}Мои вопросы{% endblock %}
+{% extends "base.html" %}
 
 {% block content %}
-<div class="container mt-4">
-  <h2>Мои вопросы</h2>
+<h2>Мои вопросы</h2>
 
-  {% if questions %}
-    <div class="list-group">
-      {% for question in questions %}
-        <div class="list-group-item mb-3">
-          <h5>{{ question.text }}</h5>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">A: {{ question.option_a }}</li>
-            <li class="list-group-item">B: {{ question.option_b }}</li>
-            <li class="list-group-item">C: {{ question.option_c }}</li>
-            <li class="list-group-item">D: {{ question.option_d }}</li>
-          </ul>
-          <p class="mt-2"><strong>Правильный вариант:</strong> {{ question.get_correct_option_display }}</p>
+<form method="get" class="mb-3">
+    <input type="text" name="q" placeholder="Поиск по вопросу" value="{{ search_query }}">
+    <input type="date" name="date" value="{{ date_filter }}">
+    <button type="submit">Найти</button>
+</form>
 
-          <div class="mt-2">
-            <a href="{% url 'edit_question' question.id %}" class="btn btn-sm btn-outline-primary">Редактировать</a>
-            <a href="{% url 'delete_question' question.id %}" class="btn btn-sm btn-outline-danger">Удалить</a>
-          </div>
-        </div>
-      {% endfor %}
+{% for question in page_obj %}
+    <div>
+        <p><strong>{{ question.text }}</strong></p>
+        <ul>
+            {% for answer in question.answers.all %}
+                <li{% if answer.is_correct %} style="color: green;"{% endif %}>
+                    {{ answer.text }}
+                    {% if answer.is_correct %} (правильный) {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'edit_question' question.id %}">✏️ Редактировать</a> |
+        <a href="{% url 'delete_question' question.id %}">🗑️ Удалить</a>
     </div>
-  {% else %}
-    <p>Вы ещё не добавили ни одного вопроса.</p>
-  {% endif %}
+    <hr>
+{% empty %}
+    <p>Нет вопросов.</p>
+{% endfor %}
+
+<div class="pagination">
+    <span>
+        Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}
+    </span>
+
+    {% if page_obj.has_previous %}
+        <a href="?{% if search_query %}q={{ search_query }}&{% endif %}{% if date_filter %}date={{ date_filter }}&{% endif %}page={{ page_obj.previous_page_number }}">⬅️ Предыдущая</a>
+    {% endif %}
+
+    {% if page_obj.has_next %}
+        <a href="?{% if search_query %}q={{ search_query }}&{% endif %}{% if date_filter %}date={{ date_filter }}&{% endif %}page={{ page_obj.next_page_number }}">Следующая ➡️</a>
+    {% endif %}
 </div>
 {% endblock %}

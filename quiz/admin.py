@@ -5,7 +5,7 @@ from .models import Question, Session, UserAnswer
 
 @admin.register(Question)
 class QuestionAdmin(admin.ModelAdmin):
-    list_display = ('id', 'user', 'text', 'correct_option')
+    list_display = ('id', 'user', 'text', 'correct_option', 'created_at')
     search_fields = ('text',)
     list_filter = ('user',)
 
