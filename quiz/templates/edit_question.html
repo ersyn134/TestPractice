@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% load widget_tweaks %}
+
+
+{% block title %}Редактировать вопрос{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2>Редактировать вопрос</h2>
+
+  <form method="post">
+    {% csrf_token %}
+
+    <!-- Ошибки формы -->
+    {% if form.non_field_errors %}
+      <div class="alert alert-danger">
+        {{ form.non_field_errors }}
+      </div>
+    {% endif %}
+
+    <!-- Текст вопроса -->
+    <div class="mb-3">
+      <label class="form-label">Текст вопроса</label>
+      {{ form.text|add_class:"form-control" }}
+    </div>
+
+    <!-- Варианты ответа -->
+    <div class="mb-3">
+      <label class="form-label">Варианты ответа</label>
+      {{ form.option_a|add_class:"form-control mb-2" }}
+      {{ form.option_b|add_class:"form-control mb-2" }}
+      {{ form.option_c|add_class:"form-control mb-2" }}
+      {{ form.option_d|add_class:"form-control" }}
+    </div>
+
+    <!-- Правильный вариант -->
+    <div class="mb-3">
+      <label class="form-label">Правильный вариант</label>
+      {{ form.correct_option|add_class:"form-select" }}
+    </div>
+
+    <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+    <a href="{% url 'questions_list' %}" class="btn btn-secondary">Отмена</a>
+  </form>
+</div>
+{% endblock %}

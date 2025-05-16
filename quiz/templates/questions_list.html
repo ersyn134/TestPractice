@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Мои вопросы{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2>Мои вопросы</h2>
+
+  {% if questions %}
+    <div class="list-group">
+      {% for question in questions %}
+        <div class="list-group-item mb-3">
+          <h5>{{ question.text }}</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">A: {{ question.option_a }}</li>
+            <li class="list-group-item">B: {{ question.option_b }}</li>
+            <li class="list-group-item">C: {{ question.option_c }}</li>
+            <li class="list-group-item">D: {{ question.option_d }}</li>
+          </ul>
+          <p class="mt-2"><strong>Правильный вариант:</strong> {{ question.get_correct_option_display }}</p>
+
+          <div class="mt-2">
+            <a href="{% url 'edit_question' question.id %}" class="btn btn-sm btn-outline-primary">Редактировать</a>
+            <a href="{% url 'delete_question' question.id %}" class="btn btn-sm btn-outline-danger">Удалить</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>Вы ещё не добавили ни одного вопроса.</p>
+  {% endif %}
+</div>
+{% endblock %}

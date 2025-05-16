@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts.apps.AccountsConfig',
     'quiz.apps.QuizConfig',
+    'widget_tweaks'
 ]
 
 MIDDLEWARE = [
