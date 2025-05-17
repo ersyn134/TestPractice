@@ -17,10 +17,11 @@ class QuestionForm(forms.ModelForm):
 class SessionForm(forms.ModelForm):
     class Meta:
         model = Session
-        fields = ['mode', 'question_count']
+        fields = ['mode', 'question_count','name']
         widgets = {
             'mode': forms.Select(attrs={'class': 'form-control'}),
             'question_count': forms.NumberInput(attrs={'class': 'form-control'}),
+            'name': forms.TextInput(attrs={'class': 'form-control'}),
         }
 
     def __init__(self, *args, **kwargs):
