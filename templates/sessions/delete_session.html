@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Удалить сессию{% endblock %}
+
+{% block content %}
+<div class="card shadow-sm p-4">
+  <h2 class="mb-3">Удалить тренировочную сессию</h2>
+  <p>Вы уверены, что хотите удалить сессию <strong>{{ session.name }}</strong>?</p>
+
+  <form method="post">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-danger">Удалить</button>
+    <a href="{% url 'user_sessions' %}" class="btn btn-secondary">Отмена</a>
+  </form>
+</div>
+{% endblock %}

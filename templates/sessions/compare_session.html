@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}Сравнение сессий{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h3>Сравнение сессии "{{ current_session.name }}"</h3>
+    <p>Ваша сессия: {{ current_correct }} / {{ current_total }} ({{ current_percent }}%)</p>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Сессия</th>
+        <th>Правильных</th>
+        <th>Всего</th>
+        <th>Процент</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for cmp in comparisons %}
+      <tr>
+        <td>{{ cmp.session.name }}</td>
+        <td>{{ cmp.correct }}</td>
+        <td>{{ cmp.total }}</td>
+        <td>{{ cmp.percent }}%</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <a href="{% url 'user_sessions' %}" class="btn btn-secondary">Назад к списку</a>
+</div>
+{% endblock %}

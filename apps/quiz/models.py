@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils.timezone import now
 # Create your models here.
 
 
@@ -26,24 +27,19 @@ class Question(models.Model):
 
 
 class Session(models.Model):
-    MODE_CHOICES = [
-        ('O', 'Order'),
-        ('R', 'Random'),
-    ]
-    STATUS_CHOICES = [
-        ('O', 'Opened'),
-        ('C', 'Closed'),
-    ]
+    MODE_CHOICES = [('O', 'Order'), ('R', 'Random')]
+    STATUS_CHOICES = [('O', 'Opened'), ('C', 'Closed')]
 
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    created_at = models.DateTimeField(auto_now_add=True)
+    name = models.CharField(max_length=255, default='Без названия')
     mode = models.CharField(max_length=1, choices=MODE_CHOICES)
-    status = models.CharField(
-        max_length=1,
-        choices=STATUS_CHOICES,
-        default='O')
     question_count = models.PositiveIntegerField(null=True, blank=True)
-    name = models.CharField(max_length=255,default='Без названия')
+    created_at = models.DateTimeField(auto_now_add=True)
+    start_time = models.DateTimeField(default=now)      # время старта
+    end_time = models.DateTimeField(null=True, blank=True)
+    status = models.CharField(max_length=1, choices=STATUS_CHOICES, default='O')
+    duration = models.PositiveIntegerField(default=0)
+
 
     def __str__(self):
         return f"Session {self.pk} — {self.user.username}"

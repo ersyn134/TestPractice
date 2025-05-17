@@ -10,7 +10,10 @@
             <label for="name" class="form-label">Название сессии:</label>
             <input type="text" name="name" id="name" class="form-control" placeholder="Например: Подготовка к экзамену">
         </div>
-
+        <div class="mb-3">
+            <label for="id_duration_minutes">Время на тренировку (минуты):</label>
+            <input type="number" name="duration_minutes" id="id_duration_minutes" min="1" max="180" value="10" class="form-control">
+        </div>
         <div class="mb-3">
             <label for="mode" class="form-label">Режим прохождения:</label>
             <select name="mode" id="mode" class="form-select" required>

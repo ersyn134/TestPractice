@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %}Мои сессии{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+  <h2>Мои сессии</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Название</th>
+        <th>Дата</th>
+        <th>Вопросов</th>
+        <th>Статус</th>
+        <th>Действия</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for s in sessions %}
+      <tr>
+        <td>{{ s.name }}</td>
+        <td>{{ s.created_at|date:"Y-m-d H:i" }}</td>
+        <td>{{ s.question_count }}</td>
+        <td>
+          {% if s.status == 'O' %}
+            <span class="badge bg-warning text-dark">В процессе</span>
+          {% else %}
+            <span class="badge bg-success">Завершено</span>
+          {% endif %}
+        </td>
+        <td>
+          {% if s.status == 'O' %}
+            <!-- Если сессия не завершена -->
+            <a href="{% url 'session_question_view' s.id 0 %}" class="btn btn-sm btn-primary">Продолжить</a>
+          {% else %}
+            <!-- Завершена: вместо «Начать» показываем «Повторить» -->
+            <a href="{% url 'repeat_session' s.id %}" class="btn btn-sm btn-secondary">Повторить</a>
+            <a href="{% url 'session_complete_view' s.id %}" class="btn btn-sm btn-info">Результаты</a>
+          {% endif %}
+
+          <!-- Кнопка удаления -->
+          <form method="post" action="{% url 'delete_session' s.id %}" class="d-inline">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-sm btn-danger">Удалить</button>
+          </form>
+        </td>
+      </tr>
+      {% empty %}
+      <tr><td colspan="5">Нет сессий.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+    {% if latest_completed %}
+      <a href="{% url 'compare_session' latest_completed.id %}" class="btn btn-outline-primary">Сравнить с другими</a>
+    {% endif %}
+
+</div>
+{% endblock %}
