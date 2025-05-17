@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Мои вопросы</h2>
+
+<form method="get" class="mb-3">
+    <input type="text" name="q" placeholder="Поиск по вопросу" value="{{ search_query }}">
+    <input type="date" name="date" value="{{ date_filter }}">
+    <button type="submit">Найти</button>
+</form>
+
+{% for question in page_obj %}
+    <div>
+        <p><strong>{{ question.text }}</strong></p>
+        <ul>
+            {% for answer in question.answers.all %}
+                <li{% if answer.is_correct %} style="color: green;"{% endif %}>
+                    {{ answer.text }}
+                    {% if answer.is_correct %} (правильный) {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'edit_question' question.id %}">✏️ Редактировать</a> |
+        <a href="{% url 'delete_question' question.id %}">🗑️ Удалить</a>
+    </div>
+    <hr>
+{% empty %}
+    <p>Нет вопросов.</p>
+{% endfor %}
+
+<div class="pagination">
+    <span>
+        Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}
+    </span>
+
+    {% if page_obj.has_previous %}
+        <a href="?{% if search_query %}q={{ search_query }}&{% endif %}{% if date_filter %}date={{ date_filter }}&{% endif %}page={{ page_obj.previous_page_number }}">⬅️ Предыдущая</a>
+    {% endif %}
+
+    {% if page_obj.has_next %}
+        <a href="?{% if search_query %}q={{ search_query }}&{% endif %}{% if date_filter %}date={{ date_filter }}&{% endif %}page={{ page_obj.next_page_number }}">Следующая ➡️</a>
+    {% endif %}
+</div>
+{% endblock %}

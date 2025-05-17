@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Начать новую тренировку</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="name" class="form-label">Название сессии:</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Например: Подготовка к экзамену">
+        </div>
+
+        <div class="mb-3">
+            <label for="mode" class="form-label">Режим прохождения:</label>
+            <select name="mode" id="mode" class="form-select" required>
+                <option value="O">По порядку</option>
+                <option value="R">Случайно</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="question_count" class="form-label">Количество вопросов:</label>
+            <input type="number" name="question_count" id="question_count" class="form-control" min="1" max="{{ total_questions }}" required>
+            <div class="form-text">Максимум {{ total_questions }} вопросов</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Начать тренировку</button>
+    </form>
+</div>
+{% endblock %}
