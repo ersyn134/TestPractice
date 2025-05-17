@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Question, Session, UserAnswer
+from .models import Question, Session, UserAnswer,SessionQuestion
 
 # Register your models here.
 
@@ -20,3 +20,7 @@ class UserAnswerAdmin(admin.ModelAdmin):
     list_display = ('id', 'user', 'session', 'question', 'selected_option', 'is_correct')
     list_filter = ('is_correct',)
     search_fields = ('user__username', 'question__text')
+
+@admin.register(SessionQuestion)
+class SessionQuestionAdmin(admin.ModelAdmin):
+    list_display = ('session','question','order')

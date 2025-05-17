@@ -15,11 +15,14 @@
       {% if user.is_authenticated %}
         <span class="text-light me-3">Привет, {{ user.username }}!</span>
 
-        # <!-- Ссылка на просмотр вопросов -->
-{        <a href="{% url 'questions_list' %}" class="btn btn-outline-light me-2">Мои вопросы</a>}
+        <!-- Ссылка на просмотр вопросов -->
+        <a href="{% url 'questions_list' %}" class="btn btn-outline-light me-2">Мои вопросы</a>
 
-        # <!-- Ссылка на добавление вопроса -->
+        <!-- Ссылка на добавление вопроса -->
         <a href="{% url 'question_add' %}" class="btn btn-outline-light me-3">Добавить вопрос</a>
+
+        <!-- Ссылка на начало сессии -->
+        <a href="{% url 'start_session' %}" class="btn btn-outline-light me-3">Начать тренировку</a>
 
         <form method="post" action="{% url 'logout' %}">
             {% csrf_token %}

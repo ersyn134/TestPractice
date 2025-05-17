@@ -19,6 +19,8 @@ class Question(models.Model):
     ]
     correct_option = models.CharField(max_length=1, choices=CHOICES)
     created_at = models.DateTimeField(auto_now_add=True)
+    order = models.PositiveIntegerField(default=0)
+
     def __str__(self):
         return self.text
 
@@ -40,9 +42,17 @@ class Session(models.Model):
         max_length=1,
         choices=STATUS_CHOICES,
         default='O')
+    question_count = models.PositiveIntegerField(null=True, blank=True)
+    name = models.CharField(max_length=255,default='Без названия')
 
     def __str__(self):
         return f"Session {self.pk} — {self.user.username}"
+
+class SessionQuestion(models.Model):
+    session = models.ForeignKey(Session, on_delete=models.CASCADE)
+    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    order = models.PositiveIntegerField()
+
 
 # Ответ пользователя в рамках конкретной сессии
 
