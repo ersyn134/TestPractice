@@ -94,22 +94,7 @@ def session(request, session_id, index):
             return redirect('session_complete_view', session_id=session.id)
         else:
             return redirect('session_question_view', session_id=session.id, index=index + 1)
-    elif request.method == 'POST':
-        selected_option = request.POST.get('selected_option', '')
-        is_correct = (selected_option == question.correct_option) if selected_option else False
 
-        UserAnswer.objects.create(
-            user=request.user,
-            session=session,
-            question=question,
-            selected_option=selected_option,
-            is_correct=is_correct
-        )
-
-        if index + 1 >= session_questions.count():
-            return redirect('session_complete_view', session_id=session.id)
-        else:
-            return redirect('session_question_view', session_id=session.id, index=index + 1)
 
 
 def session_complete(request, session_id):

@@ -1,0 +1,5251 @@
+[
+{
+  "model": "quiz.question",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary tool recommended for bootstrapping a Spring Boot application and managing initial dependencies?",
+    "option_a": "Spring Initializr",
+    "option_b": "Apache Maven CLI",
+    "option_c": "Gradle Build Tool",
+    "option_d": "Eclipse IDE Plugin",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.221Z",
+    "order": 1
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which annotation is used to mark a class as a REST controller in Spring Boot, combining @Controller and @ResponseBody?",
+    "option_a": "@RestController",
+    "option_b": "@Service",
+    "option_c": "@Component",
+    "option_d": "@Repository",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.222Z",
+    "order": 2
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Data interface is typically extended to provide basic CRUD (Create, Read, Update, Delete) operations for an entity?",
+    "option_a": "JpaRepository or CrudRepository",
+    "option_b": "DataAccessObject",
+    "option_c": "EntityManager",
+    "option_d": "SimpleJpaRepository",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.223Z",
+    "order": 3
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which HTTP method is conventionally used to create a new resource via a RESTful API?",
+    "option_a": "POST",
+    "option_b": "GET",
+    "option_c": "PUT",
+    "option_d": "DELETE",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.224Z",
+    "order": 4
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which JPA (Java Persistence API) annotation is used to designate a field in an entity as its primary key?",
+    "option_a": "@Id",
+    "option_b": "@PrimaryKey",
+    "option_c": "@EntityKey",
+    "option_d": "@Key",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.225Z",
+    "order": 5
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the common Spring Boot file where database connection properties (like URL, username, password) are configured?",
+    "option_a": "application.properties or application.yml",
+    "option_b": "database.xml",
+    "option_c": "persistence.xml",
+    "option_d": "settings.gradle",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.225Z",
+    "order": 6
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 7,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which annotation is used in JPA to define a one-to-many relationship between two entities?",
+    "option_a": "@OneToMany",
+    "option_b": "@OneToOne",
+    "option_c": "@HasMany",
+    "option_d": "@LinksToMany",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.226Z",
+    "order": 7
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 8,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary purpose of using Data Transfer Objects (DTOs) in an application?",
+    "option_a": "To transfer data between layers (e.g., service to controller) or between an API and its client, often shaping the data structure.",
+    "option_b": "To directly interact with the database tables.",
+    "option_c": "To define business logic and rules.",
+    "option_d": "To manage application security.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.226Z",
+    "order": 8
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 9,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which JPA annotation is used to define a many-to-many relationship between two entities?",
+    "option_a": "@ManyToMany",
+    "option_b": "@ManyJoin",
+    "option_c": "@JoinsTable",
+    "option_d": "@RelatedToMany",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.226Z",
+    "order": 9
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 10,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the process of organizing database tables to reduce redundancy and improve data integrity, such as aiming for 3NF?",
+    "option_a": "Normalization",
+    "option_b": "Denormalization",
+    "option_c": "Aggregation",
+    "option_d": "Sharding",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.227Z",
+    "order": 10
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 11,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which annotation is used in Spring to create a global exception handler for controllers?",
+    "option_a": "@ControllerAdvice",
+    "option_b": "@GlobalExceptionHandler",
+    "option_c": "@ErrorInterceptor",
+    "option_d": "@ExceptionManager",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.227Z",
+    "order": 11
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 12,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which annotation is used within a @ControllerAdvice class to specify a method that handles a particular type of exception?",
+    "option_a": "@ExceptionHandler",
+    "option_b": "@HandleError",
+    "option_c": "@CatchException",
+    "option_d": "@OnException",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.228Z",
+    "order": 12
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 13,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Jackson annotation can be used to prevent a specific field of a Java object from being serialized to JSON?",
+    "option_a": "@JsonIgnore",
+    "option_b": "@JsonSkip",
+    "option_c": "@JsonExclude",
+    "option_d": "@JsonOmit",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.228Z",
+    "order": 13
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 14,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When creating custom exceptions in Java, what class is commonly extended to create an unchecked exception?",
+    "option_a": "RuntimeException",
+    "option_b": "Exception",
+    "option_c": "Throwable",
+    "option_d": "Error",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.229Z",
+    "order": 14
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 15,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which annotation is used in JPA to define a many-to-one relationship, often representing the \"many\" side pointing to \"one\"?",
+    "option_a": "@ManyToOne",
+    "option_b": "@BelongsTo",
+    "option_c": "@SingleReference",
+    "option_d": "@ParentEntity",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.229Z",
+    "order": 15
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 16,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a common tool mentioned for testing REST API endpoints, allowing users to send HTTP requests and view responses?",
+    "option_a": "Postman or Swagger UI",
+    "option_b": "JUnit",
+    "option_c": "Selenium",
+    "option_d": "JMeter",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.229Z",
+    "order": 16
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 17,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the SLF4J (Simple Logging Facade for Java) primarily used for in a Java application?",
+    "option_a": "To provide an abstraction layer for various logging frameworks, allowing the underlying logging framework to be plugged in at deployment time.",
+    "option_b": "To directly write logs to files.",
+    "option_c": "To configure logging levels dynamically.",
+    "option_d": "To generate log reports.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.230Z",
+    "order": 17
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 18,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Boot Actuator endpoint is commonly used to check the overall health and status of an application?",
+    "option_a": "/actuator/health",
+    "option_b": "/actuator/status",
+    "option_c": "/actuator/check",
+    "option_d": "/actuator/ping",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.230Z",
+    "order": 18
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 19,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which logging framework is often used in conjunction with SLF4J in Spring Boot applications for concrete logging implementation?",
+    "option_a": "Logback",
+    "option_b": "Log4j (version 1)",
+    "option_c": "Java Util Logging (JUL)",
+    "option_d": "Apache Commons Logging",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.231Z",
+    "order": 19
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 20,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a primary goal of \"structured logging\" as mentioned in relation to exception handling?",
+    "option_a": "To log messages in a consistent, machine-readable format (e.g., JSON) with distinct fields, making them easier to parse, search, and analyze.",
+    "option_b": "To ensure logs are written in a human-readable, narrative style.",
+    "option_c": "To log only stack traces for exceptions.",
+    "option_d": "To encrypt log messages for security.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.231Z",
+    "order": 20
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 21,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When implementing search functionality over multiple fields using a single query parameter, what SQL operator is commonly used if the value should be found in any of the searched fields?",
+    "option_a": "OR",
+    "option_b": "AND",
+    "option_c": "NOR",
+    "option_d": "XOR",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.232Z",
+    "order": 21
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 22,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which annotation is used in Spring MVC to bind a method parameter to a web request parameter (query parameter)?",
+    "option_a": "@RequestParam",
+    "option_b": "@PathVariable",
+    "option_c": "@RequestBody",
+    "option_d": "@RequestHeader",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.232Z",
+    "order": 22
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 23,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If a search API endpoint finds no matching entities, what is an appropriate HTTP status code to return along with an empty list/array?",
+    "option_a": "200 OK",
+    "option_b": "404 Not Found",
+    "option_c": "204 No Content",
+    "option_d": "400 Bad Request",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.232Z",
+    "order": 23
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 24,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the purpose of input validation for API request parameters or DTO fields?",
+    "option_a": "To ensure that the data received by the application is well-formed, meets expected criteria (e.g., format, range, size), and is safe to process.",
+    "option_b": "To encrypt sensitive input data.",
+    "option_c": "To automatically convert input data types.",
+    "option_d": "To log all incoming request parameters.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.233Z",
+    "order": 24
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 25,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring class is commonly used for making synchronous, blocking HTTP requests to external REST APIs (though WebClient is now preferred for new development)?",
+    "option_a": "RestTemplate",
+    "option_b": "HttpClient",
+    "option_c": "WebClient",
+    "option_d": "HttpConnector",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.233Z",
+    "order": 25
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 26,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring class is part of the reactive WebFlux framework and is recommended for making asynchronous, non-blocking HTTP requests to external APIs?",
+    "option_a": "WebClient",
+    "option_b": "ReactiveRestTemplate",
+    "option_c": "AsyncHttpClient",
+    "option_d": "FluxRestTemplate",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.233Z",
+    "order": 26
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 27,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary purpose of implementing API rate limiting for a web service?",
+    "option_a": "To protect the API from abuse (e.g., DoS attacks), ensure fair usage among clients, and maintain service stability.",
+    "option_b": "To bill clients based on their API usage.",
+    "option_c": "To track the number of active users.",
+    "option_d": "To improve the response time of individual API calls.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.234Z",
+    "order": 27
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 28,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which HTTP status code is typically returned to a client when they have exceeded their allowed API request rate?",
+    "option_a": "429 Too Many Requests",
+    "option_b": "403 Forbidden",
+    "option_c": "503 Service Unavailable",
+    "option_d": "401 Unauthorized",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.234Z",
+    "order": 28
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 29,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which library, often used with Spring Boot, provides a token-bucket algorithm implementation for rate limiting?",
+    "option_a": "Bucket4j",
+    "option_b": "Resilience4j (provides RateLimiter, but Bucket4j is more specialized as just a rate limiter)",
+    "option_c": "Guava RateLimiter",
+    "option_d": "Hystrix",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.234Z",
+    "order": 29
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 30,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary benefit of using caching in an application, for example, with Spring Cache and Redis?",
+    "option_a": "To improve application performance and reduce latency by storing frequently accessed data in a fast-access data store, reducing the load on backend systems (e.g., databases).",
+    "option_b": "To ensure data consistency across distributed systems.",
+    "option_c": "To provide a persistent backup for the main database.",
+    "option_d": "To simplify data access logic in services.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.235Z",
+    "order": 30
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 31,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring annotation is used on a method to indicate that its result should be cached?",
+    "option_a": "@Cacheable",
+    "option_b": "@Cached",
+    "option_c": "@StoreInCache",
+    "option_d": "@SaveToCache",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.235Z",
+    "order": 31
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 32,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which in-memory data store is commonly used with Spring Cache for distributed caching due to its performance and rich data structures?",
+    "option_a": "Redis",
+    "option_b": "Memcached",
+    "option_c": "Ehcache (can be distributed but Redis is more typical for \"distributed\")",
+    "option_d": "Hazelcast",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.236Z",
+    "order": 32
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 33,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In a Spring Boot application using Redis for caching, what property is typically set in `application.properties` or `application.yml` to specify Redis as the cache type?",
+    "option_a": "spring.cache.type=redis",
+    "option_b": "spring.cache.provider=redis",
+    "option_c": "spring.redis.caching=true",
+    "option_d": "spring.caching.use=redis",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.236Z",
+    "order": 33
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 34,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the purpose of a `.gitignore` file in a Git repository?",
+    "option_a": "To specify intentionally untracked files that Git should ignore (e.g., build artifacts, IDE folders, local configuration files).",
+    "option_b": "To store the history of all committed changes.",
+    "option_c": "To define aliases for common Git commands.",
+    "option_d": "To list all tracked files in the repository.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.236Z",
+    "order": 34
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 35,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When externalizing sensitive data like database passwords in a Spring Boot application, what is a common practice for storing these credentials outside of version control?",
+    "option_a": "Using environment variables or a `.env` file (which is then loaded into environment variables).",
+    "option_b": "Hardcoding them directly in `application.properties` and committing it.",
+    "option_c": "Storing them in a public Gist.",
+    "option_d": "Encrypting `application.properties` and committing the encrypted version.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.237Z",
+    "order": 35
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 36,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary purpose of using Docker to containerize a Spring Boot application?",
+    "option_a": "To package the application and its dependencies into a standardized unit for software development, shipment, and deployment, ensuring consistency across environments.",
+    "option_b": "To automatically scale the application based on load.",
+    "option_c": "To provide a relational database service.",
+    "option_d": "To manage the application's source code.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.237Z",
+    "order": 36
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 37,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the name of the file used by Docker to define the steps for building a Docker image?",
+    "option_a": "Dockerfile",
+    "option_b": "docker-build.yml",
+    "option_c": "image.config",
+    "option_d": "Containerfile",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.237Z",
+    "order": 37
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 38,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which command-line tool is used to orchestrate multi-container Docker applications, often using a `docker-compose.yml` file?",
+    "option_a": "docker-compose",
+    "option_b": "kubectl",
+    "option_c": "docker swarm",
+    "option_d": "ansible",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.238Z",
+    "order": 38
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 39,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the JPA (Java Persistence API) annotation used to mark a Java class as an entity that can be mapped to a database table?",
+    "option_a": "@Entity",
+    "option_b": "@TableObject",
+    "option_c": "@Persistent",
+    "option_d": "@Model",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.238Z",
+    "order": 39
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 40,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which annotation is used in Spring to inject a dependency (e.g., a service into a controller)?",
+    "option_a": "@Autowired",
+    "option_b": "@Inject",
+    "option_c": "@Require",
+    "option_d": "@Resource",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.238Z",
+    "order": 40
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 41,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the default scope of a Spring bean if no other scope is specified?",
+    "option_a": "singleton",
+    "option_b": "prototype",
+    "option_c": "request",
+    "option_d": "session",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.239Z",
+    "order": 41
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 42,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring annotation marks a class as a component in the service layer, typically holding business logic?",
+    "option_a": "@Service",
+    "option_b": "@BusinessLogic",
+    "option_c": "@DomainService",
+    "option_d": "@ApplicationLogic",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.239Z",
+    "order": 42
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 43,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In a Maven project (often generated by Spring Initializr), what is the name of the XML file used to manage project dependencies and build configuration?",
+    "option_a": "pom.xml",
+    "option_b": "build.xml",
+    "option_c": "dependencies.xml",
+    "option_d": "settings.xml",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.239Z",
+    "order": 43
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 44,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the common Spring Boot \"starter\" dependency that provides core Spring MVC and an embedded Tomcat server for web applications?",
+    "option_a": "spring-boot-starter-web",
+    "option_b": "spring-boot-starter-tomcat",
+    "option_c": "spring-boot-starter-mvc",
+    "option_d": "spring-boot-starter-http",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.240Z",
+    "order": 44
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 45,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which annotation can be used in Spring MVC to map HTTP GET requests to a specific handler method?",
+    "option_a": "@GetMapping",
+    "option_b": "@HttpRequest(method=\"GET\")",
+    "option_c": "@GetAction",
+    "option_d": "@RequestMapping.Get",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.240Z",
+    "order": 45
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 46,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary purpose of the `CascadeType` attribute in JPA relationship annotations like `@OneToMany`?",
+    "option_a": "To define how persistence operations (e.g., persist, merge, remove) on the owning entity should propagate to associated entities.",
+    "option_b": "To specify the fetching strategy (EAGER or LAZY) for the relationship.",
+    "option_c": "To name the foreign key column.",
+    "option_d": "To indicate if the relationship is optional or mandatory.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.241Z",
+    "order": 46
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 47,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which HTTP status code indicates a successful request where a resource has been successfully created (often in response to a POST request)?",
+    "option_a": "201 Created",
+    "option_b": "200 OK",
+    "option_c": "204 No Content",
+    "option_d": "302 Found",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.241Z",
+    "order": 47
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 48,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a common use case for the `@Value` annotation in Spring?",
+    "option_a": "To inject values from properties files, environment variables, or system properties into fields or method parameters.",
+    "option_b": "To define the default value for an entity field.",
+    "option_c": "To specify the value of an HTTP header.",
+    "option_d": "To set the return value of a controller method.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.241Z",
+    "order": 48
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 49,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Spring Data JPA, how can you define a custom query using JPQL (Java Persistence Query Language) or native SQL for a repository method?",
+    "option_a": "By using the `@Query` annotation on the repository method.",
+    "option_b": "By naming the method according to specific conventions only.",
+    "option_c": "By creating a separate XML file for queries.",
+    "option_d": "By implementing the method directly in a concrete class.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.242Z",
+    "order": 49
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 50,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Lombok annotation is commonly used to generate a constructor with all arguments for a class?",
+    "option_a": "@AllArgsConstructor",
+    "option_b": "@NoArgsConstructor",
+    "option_c": "@RequiredArgsConstructor",
+    "option_d": "@Data",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.242Z",
+    "order": 50
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 51,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In JPA, which annotation is used to specify constraints on a database column, such as its nullability or length?",
+    "option_a": "@Column",
+    "option_b": "@FieldConstraint",
+    "option_c": "@DbRule",
+    "option_d": "@Validate",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.242Z",
+    "order": 51
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 52,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When updating an existing resource, what is a key difference in semantics between HTTP PUT and HTTP PATCH methods?",
+    "option_a": "PUT typically replaces the entire resource, while PATCH applies a partial update.",
+    "option_b": "PUT is for creating, PATCH is for updating.",
+    "option_c": "PATCH is idempotent, PUT is not.",
+    "option_d": "PUT is more secure than PATCH.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.243Z",
+    "order": 52
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 53,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring MVC class can be used as a return type from a controller method to have full control over the HTTP response, including status code, headers, and body?",
+    "option_a": "ResponseEntity<T>",
+    "option_b": "HttpResponse<T>",
+    "option_c": "RestResponse<T>",
+    "option_d": "ApiResponse<T>",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.243Z",
+    "order": 53
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 54,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a core principle of Spring Boot's auto-configuration mechanism?",
+    "option_a": "It attempts to automatically configure your Spring application based on the JAR dependencies that you have added.",
+    "option_b": "It requires manual XML configuration for all beans.",
+    "option_c": "It generates boilerplate code for controllers and services.",
+    "option_d": "It only configures embedded web servers.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.243Z",
+    "order": 54
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 55,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the typical default URL to access the H2 database console in a Spring Boot application when H2 is configured and enabled?",
+    "option_a": "/h2-console",
+    "option_b": "/db-admin",
+    "option_c": "/h2",
+    "option_d": "/database-manager",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.244Z",
+    "order": 55
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 56,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In JPA, what does \"bidirectional relationship\" mean between two entities?",
+    "option_a": "Both entities have a reference to each other, and the relationship can be navigated from either side.",
+    "option_b": "The relationship involves two foreign keys.",
+    "option_c": "Data can flow in two directions between the tables.",
+    "option_d": "The relationship is managed by an intermediary table.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.244Z",
+    "order": 56
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 57,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using Data Transfer Objects (DTOs) for API request payloads, what is a primary benefit?",
+    "option_a": "They decouple the API contract from the internal entity structure and can include validation specific to the use case.",
+    "option_b": "They automatically convert JSON to XML.",
+    "option_c": "They improve database query performance.",
+    "option_d": "They handle transaction management.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.245Z",
+    "order": 57
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 58,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which JPA annotation is used to specify the column that will be used for joining in an entity relationship (e.g., the foreign key column)?",
+    "option_a": "@JoinColumn",
+    "option_b": "@ForeignKeyColumn",
+    "option_c": "@RelationshipColumn",
+    "option_d": "@AssociationKey",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.245Z",
+    "order": 58
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 59,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What does `WorkspaceType.EAGER` signify in a JPA relationship annotation?",
+    "option_a": "The related entity or collection of entities should be loaded immediately when the owning entity is loaded.",
+    "option_b": "The related entity is loaded only when explicitly accessed.",
+    "option_c": "The loading is deferred until the transaction commits.",
+    "option_d": "The entity is loaded into a second-level cache.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.245Z",
+    "order": 59
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 60,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Jackson annotation allows you to specify a custom class for deserializing a JSON property into a Java object?",
+    "option_a": "@JsonDeserialize(using = MyCustomDeserializer.class)",
+    "option_b": "@CustomDeserializer(MyCustomDeserializer.class)",
+    "option_c": "@DeserializeWith(MyCustomDeserializer.class)",
+    "option_d": "@UseDeserializer(MyCustomDeserializer.class)",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.246Z",
+    "order": 60
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 61,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using `@ResponseStatus` on a custom exception class, what is its primary effect?",
+    "option_a": "It causes Spring MVC to automatically return the specified HTTP status code when that exception is thrown and not otherwise handled.",
+    "option_b": "It logs the exception with the specified status.",
+    "option_c": "It converts the exception into an HTTP error page.",
+    "option_d": "It triggers a specific view to be rendered.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.246Z",
+    "order": 61
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 62,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which of the following is a good practice for creating \"meaningful error messages\" in API responses?",
+    "option_a": "Provide a clear, concise message explaining the error, possibly with a unique error code and relevant field information.",
+    "option_b": "Return only the HTTP status code without a message body.",
+    "option_c": "Include the full server-side stack trace in the response.",
+    "option_d": "Use generic messages like \"An error occurred\" for all errors.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.246Z",
+    "order": 62
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 63,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a common type of deserialization vulnerability that input validation helps to prevent?",
+    "option_a": "Injecting malicious code or objects by exploiting how data is deserialized, potentially leading to remote code execution or denial of service.",
+    "option_b": "SQL injection attacks.",
+    "option_c": "Cross-Site Scripting (XSS).",
+    "option_d": "Man-in-the-middle attacks.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.247Z",
+    "order": 63
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 64,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Logback configuration, which type of appender is used to write log messages to the system console?",
+    "option_a": "ConsoleAppender",
+    "option_b": "SystemOutAppender",
+    "option_c": "StdOutAppender",
+    "option_d": "TerminalAppender",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.247Z",
+    "order": 64
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 65,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a common placeholder in a Logback pattern layout to output the date and time of a log event?",
+    "option_a": "%d (or %date)",
+    "option_b": "%t (for time)",
+    "option_c": "%timestamp",
+    "option_d": "%eventDate",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.247Z",
+    "order": 65
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 66,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Boot Actuator endpoint can provide detailed metrics about the JVM, such as memory usage, garbage collection, and thread utilization?",
+    "option_a": "/actuator/metrics (followed by specific metric names like jvm.memory.used)",
+    "option_b": "/actuator/jvm",
+    "option_c": "/actuator/env",
+    "option_d": "/actuator/threaddump",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.248Z",
+    "order": 66
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 67,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "How can Spring Boot Actuator endpoints typically be secured in a production environment?",
+    "option_a": "By integrating with Spring Security to require authentication and authorization.",
+    "option_b": "They are secure by default and need no extra configuration.",
+    "option_c": "By using unique, non-standard paths for each endpoint.",
+    "option_d": "By only allowing access from `localhost`.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.248Z",
+    "order": 67
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 68,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Spring Data JPA, if you have a repository method like `List<User> findByAgeGreaterThan(int age);`, what does this method signature imply?",
+    "option_a": "It will find all User entities where the 'age' property is greater than the provided 'age' parameter.",
+    "option_b": "It requires a custom @Query annotation.",
+    "option_c": "It will find users older than a fixed age.",
+    "option_d": "It sorts users by age in descending order.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.248Z",
+    "order": 68
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 69,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using pagination with Spring Data JPA, what object is commonly used in a service or controller to create a `Pageable` request specifying page number, size, and sort order?",
+    "option_a": "PageRequest",
+    "option_b": "PageBuilder",
+    "option_c": "SortablePage",
+    "option_d": "OffsetLimit",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.249Z",
+    "order": 69
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 70,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which JSR 303/380 bean validation annotation can be used to ensure that a CharSequence (like a String) is not null and has a minimum and/or maximum length?",
+    "option_a": "@Size(min=X, max=Y)",
+    "option_b": "@Length(min=X, max=Y)",
+    "option_c": "@NotEmpty(min=X, max=Y)",
+    "option_d": "@Range(min=X, max=Y)",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.249Z",
+    "order": 70
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 71,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When an external API call results in an HTTP error (e.g., 4xx or 5xx), what exception might `RestTemplate` throw (if not configured with custom error handlers)?",
+    "option_a": "HttpClientErrorException or HttpServerErrorException",
+    "option_b": "ExternalApiException",
+    "option_c": "IOException",
+    "option_d": "RestClientException",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.249Z",
+    "order": 71
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 72,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a common way to securely provide an API key when making requests to an external service that requires one?",
+    "option_a": "By sending it in an HTTP header (e.g., `Authorization` or a custom header like `X-API-Key`).",
+    "option_b": "By embedding it directly in the URL as a query parameter.",
+    "option_c": "By hardcoding it in the application source code.",
+    "option_d": "By storing it in a client-side cookie.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.250Z",
+    "order": 72
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 73,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In the context of API rate limiting, what does \"burst capacity\" or \"burstiness\" typically refer to?",
+    "option_a": "The ability of the rate limiter to allow a certain number of requests to exceed the steady-state rate for a short period.",
+    "option_b": "The total number of requests allowed per day.",
+    "option_c": "The speed at which tokens are refilled in a token bucket.",
+    "option_d": "The number of different IP addresses that can access the API.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.250Z",
+    "order": 73
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 74,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring AOP (Aspect-Oriented Programming) concept could be used to declaratively apply rate limiting logic to controller methods?",
+    "option_a": "An Around advice associated with a pointcut matching the target methods.",
+    "option_b": "A Spring Bean PostProcessor.",
+    "option_c": "A custom `HttpMessageConverter`.",
+    "option_d": "A Spring `ApplicationListener`.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.251Z",
+    "order": 74
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 75,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Cache annotation is used to update an existing cache entry with the result of the annotated method?",
+    "option_a": "@CachePut",
+    "option_b": "@CacheUpdate",
+    "option_c": "@RefreshCache",
+    "option_d": "@ReplaceCacheValue",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.251Z",
+    "order": 75
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 76,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Cache annotation is used to remove one or more entries from a cache?",
+    "option_a": "@CacheEvict",
+    "option_b": "@CacheRemove",
+    "option_c": "@DeleteFromCache",
+    "option_d": "@InvalidateCache",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.251Z",
+    "order": 76
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 77,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the purpose of the `condition` attribute in the `@Cacheable` annotation?",
+    "option_a": "It allows specifying a SpEL (Spring Expression Language) expression that, if true, will cause the method to be cached; otherwise, it will not.",
+    "option_b": "It specifies the condition under which the cache should be evicted.",
+    "option_c": "It defines the data type of the cached result.",
+    "option_d": "It links the cache operation to a specific transaction.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.252Z",
+    "order": 77
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 78,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary Spring Boot \"starter\" dependency that enables caching abstraction?",
+    "option_a": "spring-boot-starter-cache",
+    "option_b": "spring-boot-starter-caffeine",
+    "option_c": "spring-boot-starter-redis-cache",
+    "option_d": "spring-boot-starter-ehcache",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.252Z",
+    "order": 78
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 79,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a key difference between a local, in-memory cache (like Caffeine or a simple ConcurrentHashMap) and a distributed cache (like Redis)?",
+    "option_a": "A local cache stores data within a single application instance's memory, while a distributed cache stores data in a separate process accessible by multiple application instances.",
+    "option_b": "Local caches are always faster than distributed caches.",
+    "option_c": "Distributed caches do not support eviction policies.",
+    "option_d": "Local caches are only for read-only data.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.253Z",
+    "order": 79
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 80,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Git command is used to stage changes in your working directory for the next commit?",
+    "option_a": "git add <file>... or git add .",
+    "option_b": "git stage <file>...",
+    "option_c": "git commit -m \"message\"",
+    "option_d": "git save <file>...",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.253Z",
+    "order": 80
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 81,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the typical syntax for using an environment variable in a `docker-compose.yml` file or a Spring `application.properties` file?",
+    "option_a": "`${VARIABLE_NAME}`",
+    "option_b": "`%VARIABLE_NAME%`",
+    "option_c": "`$(VARIABLE_NAME)`",
+    "option_d": "`#{VARIABLE_NAME}`",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.254Z",
+    "order": 81
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 82,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In a Dockerfile, what is the `WORKDIR` instruction used for?",
+    "option_a": "To set the working directory for any subsequent `RUN`, `CMD`, `ENTRYPOINT`, `COPY`, and `ADD` instructions.",
+    "option_b": "To define a volume for persistent data.",
+    "option_c": "To expose a port.",
+    "option_d": "To specify the user to run subsequent commands.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.255Z",
+    "order": 82
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 83,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a primary difference between the `CMD` and `ENTRYPOINT` instructions in a Dockerfile?",
+    "option_a": "`ENTRYPOINT` configures the container to run as an executable, while `CMD` provides default arguments for the `ENTRYPOINT` or an ad-hoc command if no `ENTRYPOINT` is specified.",
+    "option_b": "`CMD` is executed at build time, `ENTRYPOINT` at runtime.",
+    "option_c": "Only `ENTRYPOINT` can be overridden when starting a container.",
+    "option_d": "`CMD` is for services, `ENTRYPOINT` for scripts.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.255Z",
+    "order": 83
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 84,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the purpose of the `target/` directory in a typical Maven project structure?",
+    "option_a": "It is the default output directory for all build artifacts, such as compiled classes, packaged JAR/WAR files, and test reports.",
+    "option_b": "It stores the project's source code.",
+    "option_c": "It contains project dependencies.",
+    "option_d": "It holds configuration files for the Maven build.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.256Z",
+    "order": 84
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 85,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which annotation is used to specify the base packages to scan for Spring components (like @Controller, @Service, etc.) if they are not in sub-packages of the main application class?",
+    "option_a": "@ComponentScan",
+    "option_b": "@ScanPackages",
+    "option_c": "@EnableComponentScanning",
+    "option_d": "@AutoScan",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.256Z",
+    "order": 85
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 86,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the default fetch type for a `@OneToMany` JPA relationship?",
+    "option_a": "LAZY",
+    "option_b": "EAGER",
+    "option_c": "AUTO",
+    "option_d": "OPTIONAL",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.257Z",
+    "order": 86
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 87,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Jackson annotation can be used to specify a different name for a Java field when it's serialized to or deserialized from JSON?",
+    "option_a": "@JsonProperty(\"custom_name\")",
+    "option_b": "@JsonAlias(\"custom_name\")",
+    "option_c": "@JsonFieldName(\"custom_name\")",
+    "option_d": "@JsonElement(\"custom_name\")",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.257Z",
+    "order": 87
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 88,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Spring Security, what is the primary role of an `AuthenticationManager`?",
+    "option_a": "To process an authentication request (e.g., username/password) and return an authenticated `Authentication` object if successful, or throw an exception if not.",
+    "option_b": "To manage user roles and permissions.",
+    "option_c": "To encrypt and decrypt passwords.",
+    "option_d": "To store user session information.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.258Z",
+    "order": 88
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 89,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a \"fat JAR\" or \"uber JAR\" in the context of a Spring Boot application?",
+    "option_a": "A single JAR file that contains all the application's compiled code as well as all its dependencies, making it self-contained and executable.",
+    "option_b": "A JAR file that is larger than 100MB.",
+    "option_c": "A JAR file that only contains application properties.",
+    "option_d": "A JAR that requires a separate web server to run.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.258Z",
+    "order": 89
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 90,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Actuator endpoint provides information about the application's configuration properties from all `PropertySource`s?",
+    "option_a": "/actuator/configprops",
+    "option_b": "/actuator/properties",
+    "option_c": "/actuator/appconfig",
+    "option_d": "/actuator/settings",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.259Z",
+    "order": 90
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 91,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In `docker-compose.yml`, what is the `ports` mapping (e.g., \"8080:8080\") used for?",
+    "option_a": "To map a port on the host machine to a port on the container.",
+    "option_b": "To define which ports the container exposes internally.",
+    "option_c": "To link ports between different services in the compose file.",
+    "option_d": "To specify the application's listening port in its configuration.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.260Z",
+    "order": 91
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 92,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What does the term \"idempotent\" mean for an HTTP method in a REST API?",
+    "option_a": "Making multiple identical requests has the same effect as making a single request.",
+    "option_b": "The request does not change any state on the server.",
+    "option_c": "The request always returns the same response.",
+    "option_d": "The request is processed asynchronously.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.261Z",
+    "order": 92
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 93,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring annotation can be used to create a bean conditionally based on the presence or absence of another bean, property, or class?",
+    "option_a": "@ConditionalOnBean, @ConditionalOnProperty, @ConditionalOnClass, etc.",
+    "option_b": "@IfBeanExists",
+    "option_c": "@RequiresDependency",
+    "option_d": "@ActivateIf",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.261Z",
+    "order": 93
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 94,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the purpose of using connection pooling for database connections in an application?",
+    "option_a": "To manage a pool of pre-established database connections that can be reused by the application, improving performance by reducing the overhead of creating new connections for each request.",
+    "option_b": "To encrypt database connections.",
+    "option_c": "To automatically route queries to different database replicas.",
+    "option_d": "To provide an in-memory database cache.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.261Z",
+    "order": 94
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 95,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Boot \"starter\" dependency is typically used for integrating with reactive data access, for instance, with reactive database drivers?",
+    "option_a": "spring-boot-starter-data-r2dbc",
+    "option_b": "spring-boot-starter-data-jpa-reactive",
+    "option_c": "spring-boot-starter-reactive-db",
+    "option_d": "spring-boot-starter-webflux-data",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.262Z",
+    "order": 95
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 96,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What does the `@SpringBootTest` annotation typically do when used in a Spring Boot test class?",
+    "option_a": "It loads the full application context (or a relevant slice of it) for integration testing.",
+    "option_b": "It only unit tests a single Spring component.",
+    "option_c": "It generates test data automatically.",
+    "option_d": "It deploys the application to a test server.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.262Z",
+    "order": 96
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 97,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In a `docker-compose.yml` file, what is a \"volume\" primarily used for?",
+    "option_a": "To persist data generated by and used by Docker containers, allowing data to survive container restarts or removals.",
+    "option_b": "To define the network configuration for services.",
+    "option_c": "To limit the CPU and memory resources for a container.",
+    "option_d": "To store the Docker image layers.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.262Z",
+    "order": 97
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 98,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the purpose of a `PreparedStatement` in JDBC, which is often used under the hood by JPA providers?",
+    "option_a": "To precompile an SQL statement that can be executed multiple times efficiently and to help prevent SQL injection by parameterizing inputs.",
+    "option_b": "To execute multiple SQL statements in a single batch.",
+    "option_c": "To manage database transactions.",
+    "option_d": "To store the results of an SQL query.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.263Z",
+    "order": 98
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 99,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which HTTP header is commonly used by clients to indicate the desired content type(s) for the response?",
+    "option_a": "Accept",
+    "option_b": "Content-Type",
+    "option_c": "X-Requested-With",
+    "option_d": "User-Agent",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.263Z",
+    "order": 99
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 100,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Lombok annotation combines @Getter, @Setter, @ToString, @EqualsAndHashCode, and @RequiredArgsConstructor?",
+    "option_a": "@Data",
+    "option_b": "@Compound",
+    "option_c": "@Bean",
+    "option_d": "@EntityComplete",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.264Z",
+    "order": 100
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 101,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When configuring a relational database in `application.properties` for Spring Data JPA, which property specifies the JDBC URL?",
+    "option_a": "spring.datasource.url",
+    "option_b": "spring.jpa.database-url",
+    "option_c": "spring.db.connection-string",
+    "option_d": "spring.jdbc.url",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.264Z",
+    "order": 101
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 102,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In a REST API, which HTTP method is typically used to delete a resource identified by a URI?",
+    "option_a": "DELETE",
+    "option_b": "REMOVE",
+    "option_c": "DROP",
+    "option_d": "ERASE",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.264Z",
+    "order": 102
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 103,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the role of an `EntityManager` in JPA?",
+    "option_a": "It is an API that manages the lifecycle of entities, including operations like persisting, finding, updating, and removing entities, and querying.",
+    "option_b": "It is a factory for creating database connections.",
+    "option_c": "It is an annotation to define an entity manager bean.",
+    "option_d": "It is a tool for generating entity classes from database tables.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.265Z",
+    "order": 103
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 104,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If you want to ensure a specific field in your JPA entity is not null at the database level, which attribute of the `@Column` annotation would you use?",
+    "option_a": "nullable = false",
+    "option_b": "@NotNull",
+    "option_c": "required = true",
+    "option_d": "optional = false",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.265Z",
+    "order": 104
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 105,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When defining a one-to-one relationship in JPA, which annotation is used on the entity field representing the relationship?",
+    "option_a": "@OneToOne",
+    "option_b": "@SingleJoin",
+    "option_c": "@UniqueAssociation",
+    "option_d": "@ToOne",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.265Z",
+    "order": 105
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 106,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the purpose of a \"join table\" in the context of a many-to-many relationship in relational databases?",
+    "option_a": "To resolve a many-to-many relationship into two one-to-many relationships by having a table that links records from the two related tables.",
+    "option_b": "To store denormalized data for faster reads.",
+    "option_c": "To combine columns from multiple tables into a single view.",
+    "option_d": "To partition a large table into smaller ones.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.266Z",
+    "order": 106
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 107,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If a REST API needs to accept complex data (e.g., a JSON object) in the request body for creating or updating a resource, which Spring MVC annotation is used on the controller method parameter?",
+    "option_a": "@RequestBody",
+    "option_b": "@RequestParam",
+    "option_c": "@ModelAttribute",
+    "option_d": "@BodyContent",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.266Z",
+    "order": 107
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 108,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Jackson annotation can be used to define different serialization views for an object, allowing selective exposure of fields?",
+    "option_a": "@JsonView",
+    "option_b": "@JsonFilter",
+    "option_c": "@JsonProfile",
+    "option_d": "@JsonOutput",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.266Z",
+    "order": 108
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 109,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When implementing custom exception handling with `@ControllerAdvice`, what is a common reason to create custom exception classes extending `RuntimeException`?",
+    "option_a": "To represent specific business rule violations or application-specific error conditions in a clear and typed manner.",
+    "option_b": "To ensure all exceptions are checked exceptions.",
+    "option_c": "To provide default error messages for all exceptions.",
+    "option_d": "To automatically log all exceptions to a specific file.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.267Z",
+    "order": 109
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 110,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Logback configuration, what is a \"filter\" typically used for within an appender?",
+    "option_a": "To make a decision on whether a logging event should be processed by the appender based on criteria like log level, marker, or content.",
+    "option_b": "To format the log message.",
+    "option_c": "To route logs to different files based on the logger name.",
+    "option_d": "To compress old log files.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.267Z",
+    "order": 110
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 111,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Boot Actuator endpoint provides a list of all available Actuator endpoints?",
+    "option_a": "/actuator",
+    "option_b": "/actuator/endpoints",
+    "option_c": "/actuator/info",
+    "option_d": "/actuator/list",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.267Z",
+    "order": 111
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 112,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When implementing a search endpoint that takes a query string, what is the HTTP status code typically returned if the query string is malformed or invalid (e.g., too short)?",
+    "option_a": "400 Bad Request",
+    "option_b": "404 Not Found",
+    "option_c": "204 No Content",
+    "option_d": "500 Internal Server Error",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.268Z",
+    "order": 112
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 113,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Java API is often used for processing and transforming collections of data, such as filtering or mapping data retrieved from an external API?",
+    "option_a": "Java Stream API (java.util.stream)",
+    "option_b": "Java Collections Framework (java.util)",
+    "option_c": "Apache Commons Collections",
+    "option_d": "Guava Libraries",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.268Z",
+    "order": 113
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 114,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If an external API requires an API key for authentication, what is a common HTTP header used to transmit this key?",
+    "option_a": "Authorization (e.g., Bearer <key>, or a custom header like X-API-Key)",
+    "option_b": "ApiKey",
+    "option_c": "X-Auth-Token",
+    "option_d": "Credentials",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.268Z",
+    "order": 114
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 115,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In API rate limiting, what does it mean to limit requests \"per client (IP address or token)\"?",
+    "option_a": "The rate limit is applied individually to each unique client identifier, rather than globally for all API traffic.",
+    "option_b": "Only authenticated clients are subject to rate limits.",
+    "option_c": "The API can only be accessed by specific IP addresses.",
+    "option_d": "Each token has a different rate limit.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.269Z",
+    "order": 115
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 116,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring `HandlerInterceptor` method would you implement to apply rate limiting logic *before* the actual controller method is executed?",
+    "option_a": "preHandle()",
+    "option_b": "postHandle()",
+    "option_c": "afterCompletion()",
+    "option_d": "aroundInvoke()",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.269Z",
+    "order": 116
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 117,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a common strategy for naming cache regions or cache names when using `@Cacheable` with multiple caches?",
+    "option_a": "Use names that reflect the type of data being cached or the purpose of the cache (e.g., \"products\", \"users\", \"sessionData\").",
+    "option_b": "Use randomly generated UUIDs.",
+    "option_c": "Use the fully qualified class name of the service.",
+    "option_d": "Use a single cache name for the entire application.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.269Z",
+    "order": 117
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 118,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using Spring Cache with Redis, where does Redis store the cached data?",
+    "option_a": "In memory, on the Redis server.",
+    "option_b": "On the application server's disk.",
+    "option_c": "In a relational database.",
+    "option_d": "In browser local storage.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.270Z",
+    "order": 118
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 119,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Git command is used to create a new branch in your local repository?",
+    "option_a": "git branch <branch-name> (or git checkout -b <branch-name> to create and switch)",
+    "option_b": "git new-branch <branch-name>",
+    "option_c": "git fork <branch-name>",
+    "option_d": "git create-branch <branch-name>",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.270Z",
+    "order": 119
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 120,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In a Dockerfile, what is the `ARG` instruction primarily used for?",
+    "option_a": "To define variables that users can pass at build-time using the `docker build --build-arg <varname>=<value>` command.",
+    "option_b": "To set environment variables that will be available inside the running container.",
+    "option_c": "To define arguments for the `ENTRYPOINT` or `CMD` instructions.",
+    "option_d": "To specify the architecture for which the image is being built.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.270Z",
+    "order": 120
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 121,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using `docker-compose up`, what happens if the Docker images specified in `docker-compose.yml` do not exist locally?",
+    "option_a": "Docker Compose will attempt to pull them from a Docker registry (like Docker Hub) by default.",
+    "option_b": "The command will fail immediately.",
+    "option_c": "Docker Compose will try to build them from a local Dockerfile if present.",
+    "option_d": "It will prompt the user to specify the image location.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.271Z",
+    "order": 121
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 122,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring annotation is used to enable Spring's scheduling capabilities, allowing methods annotated with `@Scheduled` to run?",
+    "option_a": "@EnableScheduling",
+    "option_b": "@EnableTasks",
+    "option_c": "@AllowScheduling",
+    "option_d": "@ScheduledExecution",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.271Z",
+    "order": 122
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 123,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary purpose of the `spring-boot-maven-plugin` (or Gradle equivalent) in a Spring Boot project?",
+    "option_a": "To package the Spring Boot application into an executable JAR or WAR file, including all dependencies and an embedded server.",
+    "option_b": "To manage project dependencies.",
+    "option_c": "To compile Java source code.",
+    "option_d": "To run unit tests.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.271Z",
+    "order": 123
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 124,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In JPA, what is the `@Transient` annotation used for?",
+    "option_a": "To mark a field in an entity class that should not be persisted to the database.",
+    "option_b": "To indicate that an entity is in a temporary state.",
+    "option_c": "To specify a transactional boundary.",
+    "option_d": "To define a transient database connection.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.272Z",
+    "order": 124
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 125,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If you want to perform an action immediately after a Spring bean's properties have been set and dependencies injected, which annotation would you use on a method?",
+    "option_a": "@PostConstruct",
+    "option_b": "@AfterPropertiesSet",
+    "option_c": "@BeanReady",
+    "option_d": "@Initialize",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.272Z",
+    "order": 125
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 126,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What does the `ResponseEntity.ok()` static method typically build?",
+    "option_a": "An HTTP 200 OK response, often with a body.",
+    "option_b": "An empty HTTP 200 OK response.",
+    "option_c": "An HTTP 201 Created response.",
+    "option_d": "An HTTP 500 Internal Server Error response.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.272Z",
+    "order": 126
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 127,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Logback, what is the role of an `<encoder>` within an `<appender>` configuration?",
+    "option_a": "To transform a logging event into a byte array that can be written out by the appender, often involving a pattern layout.",
+    "option_b": "To encrypt log messages.",
+    "option_c": "To filter log messages based on their content.",
+    "option_d": "To specify the character encoding of the log file.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.273Z",
+    "order": 127
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 128,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Actuator endpoint can be used to gracefully shut down the Spring Boot application (if enabled)?",
+    "option_a": "/actuator/shutdown",
+    "option_b": "/actuator/stop",
+    "option_c": "/actuator/exit",
+    "option_d": "/actuator/terminate",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.273Z",
+    "order": 128
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 129,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When implementing a search query in Spring Data JPA that involves checking if a string field *contains* a certain substring, what keyword is often used in derived query method names or JPQL?",
+    "option_a": "Containing (or Contains) or LIKE operator in JPQL.",
+    "option_b": "Equals",
+    "option_c": "Matching",
+    "option_d": "Includes",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.273Z",
+    "order": 129
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 130,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If an external API returns data in XML format, how might you configure `RestTemplate` or `WebClient` to handle it?",
+    "option_a": "By ensuring an appropriate `HttpMessageConverter` for XML (like `Jaxb2RootElementHttpMessageConverter` or Jackson XML support) is registered.",
+    "option_b": "XML is handled by default without any special configuration.",
+    "option_c": "By manually parsing the XML string in the service layer.",
+    "option_d": "By converting XML to JSON using an online tool before processing.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.274Z",
+    "order": 130
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 131,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When implementing rate limiting using a \"token bucket\" algorithm, what happens when a request arrives and there are no tokens in the bucket?",
+    "option_a": "The request is typically rejected or delayed until a token becomes available.",
+    "option_b": "A new token is generated immediately.",
+    "option_c": "The bucket size is temporarily increased.",
+    "option_d": "The request is given lower priority.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.275Z",
+    "order": 131
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 132,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which HTTP header is often inspected by a rate limiter to identify unique clients when rate limiting is based on IP address?",
+    "option_a": "The source IP address of the request, often derived from headers like `X-Forwarded-For` if behind a proxy, or the direct connection IP.",
+    "option_b": "`User-Agent`",
+    "option_c": "`Host`",
+    "option_d": "`X-Client-ID`",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.276Z",
+    "order": 132
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 133,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Spring Cache, what is the `keyGenerator` attribute of annotations like `@Cacheable` used for?",
+    "option_a": "To specify the name of a custom `KeyGenerator` bean that will be used to generate cache keys if the default strategy is not suitable.",
+    "option_b": "To generate a random encryption key for the cache.",
+    "option_c": "To define the data type of the cache key.",
+    "option_d": "To list all possible keys for a given cache.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.277Z",
+    "order": 133
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 134,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the common Redis command used to retrieve the value associated with a key?",
+    "option_a": "GET <key>",
+    "option_b": "FETCH <key>",
+    "option_c": "READ <key>",
+    "option_d": "SELECT <key>",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.277Z",
+    "order": 134
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 135,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Git command is used to upload local repository content to a remote repository?",
+    "option_a": "git push",
+    "option_b": "git upload",
+    "option_c": "git send",
+    "option_d": "git sync-remote",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.278Z",
+    "order": 135
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 136,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary benefit of using environment variables for configuration in different deployment environments (dev, test, prod)?",
+    "option_a": "It allows the same application package (e.g., JAR/Docker image) to be used across environments, with behavior customized by environment-specific settings without code changes.",
+    "option_b": "It makes the application run faster.",
+    "option_c": "It simplifies the `application.properties` file.",
+    "option_d": "It automatically encrypts sensitive configuration values.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.278Z",
+    "order": 136
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 137,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In a `Dockerfile`, what is the `ENV` instruction used for?",
+    "option_a": "To set environment variables that will be available inside the running container and during subsequent build steps.",
+    "option_b": "To define build-time arguments.",
+    "option_c": "To specify the application's runtime environment (e.g., Java version).",
+    "option_d": "To list environment-specific configuration files.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.279Z",
+    "order": 137
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 138,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When `docker-compose` starts multiple services defined in `docker-compose.yml`, how do these services typically discover and communicate with each other?",
+    "option_a": "By using the service names as hostnames, as Docker Compose sets up a default network for the services.",
+    "option_b": "By hardcoding IP addresses of other containers.",
+    "option_c": "Through a central service registry that must be manually configured.",
+    "option_d": "Via shared volumes only.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.279Z",
+    "order": 138
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 139,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the `@SpringBootApplication` annotation in a main Spring Boot class a convenience annotation for?",
+    "option_a": "It combines `@Configuration`, `@EnableAutoConfiguration`, and `@ComponentScan`.",
+    "option_b": "It only enables auto-configuration.",
+    "option_c": "It only scans for components.",
+    "option_d": "It only defines the class as a configuration source.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.280Z",
+    "order": 139
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 140,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which HTTP method is best suited for retrieving a collection of resources (e.g., a list of all users)?",
+    "option_a": "GET",
+    "option_b": "LIST",
+    "option_c": "FETCHALL",
+    "option_d": "QUERY",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.280Z",
+    "order": 140
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 141,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In JPA, if an entity has a field that is a collection of other entities (e.g., `@OneToMany List<OrderItem> items`), and this field is LAZY loaded, when is the data for `items` typically fetched from the database?",
+    "option_a": "When the `getItems()` method is first called on the parent entity within an active transaction/session.",
+    "option_b": "Immediately when the parent entity is loaded.",
+    "option_c": "Only when the `items` collection is explicitly saved.",
+    "option_d": "Never, it must be populated manually.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.281Z",
+    "order": 141
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 142,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the purpose of the `ObjectMapper` class in the Jackson library?",
+    "option_a": "To convert Java objects to/from JSON (serialization/deserialization).",
+    "option_b": "To map HTTP requests to controller methods.",
+    "option_c": "To map entity classes to database tables.",
+    "option_d": "To configure logging format.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.282Z",
+    "order": 142
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 143,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a \"Log Level Threshold Filter\" in Logback?",
+    "option_a": "A filter that allows events of a specific level or more severe (e.g., WARN and above) to pass, while blocking less severe events.",
+    "option_b": "A filter that only allows logs from a specific logger.",
+    "option_c": "A filter that blocks logs containing certain keywords.",
+    "option_d": "A filter that limits the number of log messages per second.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.282Z",
+    "order": 143
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 144,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Actuator endpoint typically exposes arbitrary application information provided by `InfoContributor` beans?",
+    "option_a": "/actuator/info",
+    "option_b": "/actuator/application",
+    "option_c": "/actuator/details",
+    "option_d": "/actuator/custom",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.282Z",
+    "order": 144
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 145,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When configuring an external API call using `WebClient`, what does the `.retrieve()` method signify?",
+    "option_a": "It indicates that the request is ready to be sent and the response body should be retrieved.",
+    "option_b": "It retrieves a cached response for the request.",
+    "option_c": "It retrieves the configuration for the `WebClient` instance.",
+    "option_d": "It retrieves metadata about the external API endpoint.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.283Z",
+    "order": 145
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 146,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary purpose of using a `Filter` (from `javax.servlet.Filter`) or a Spring `HandlerInterceptor` when implementing cross-cutting concerns like rate limiting or custom authentication?",
+    "option_a": "To intercept requests before they reach the controller (and/or responses after they leave) to apply common logic.",
+    "option_b": "To modify the request body directly.",
+    "option_c": "To manage database transactions for the request.",
+    "option_d": "To define routing rules for incoming requests.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.283Z",
+    "order": 146
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 147,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Redis data structure is often suitable for implementing simple caching where you map a key to a single string or serialized object value?",
+    "option_a": "Strings",
+    "option_b": "Hashes",
+    "option_c": "Lists",
+    "option_d": "Sets",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.283Z",
+    "order": 147
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 148,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In a Git workflow, what is the \"staging area\" (or \"index\") used for?",
+    "option_a": "It's an intermediate area where you prepare and review changes that will be included in the next commit.",
+    "option_b": "It's a backup of your local repository.",
+    "option_c": "It's where committed changes are stored before being pushed to a remote.",
+    "option_d": "It's a shared area for team collaboration.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.284Z",
+    "order": 148
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 149,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the `EXPOSE` instruction in a `Dockerfile` used for?",
+    "option_a": "To document which ports the application inside the container is listening on; it does not actually publish the port.",
+    "option_b": "To map a container port to a host port.",
+    "option_c": "To open a port in the host's firewall.",
+    "option_d": "To set the default port for the `ENTRYPOINT` command.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.284Z",
+    "order": 149
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 150,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Lombok annotation is used to generate only getter methods for all fields in a class?",
+    "option_a": "@Getter",
+    "option_b": "@Accessors(fluent=true)",
+    "option_c": "@ReadOnly",
+    "option_d": "@FieldGetter",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.285Z",
+    "order": 150
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 151,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In `application.properties`, what property is typically used to specify the JPA provider's DDL (Data Definition Language) auto-generation strategy (e.g., create, update, validate)?",
+    "option_a": "spring.jpa.hibernate.ddl-auto",
+    "option_b": "spring.jpa.database-platform",
+    "option_c": "spring.datasource.schema-action",
+    "option_d": "spring.jpa.generate-ddl",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.286Z",
+    "order": 151
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 152,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When a client sends a GET request to a REST API and the requested resource has been permanently moved to a new URI, which HTTP status code is most appropriate to return with the new URI?",
+    "option_a": "301 Moved Permanently",
+    "option_b": "302 Found",
+    "option_c": "307 Temporary Redirect",
+    "option_d": "410 Gone",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.287Z",
+    "order": 152
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 153,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In JPA, what is the `@Table` annotation primarily used for on an entity class?",
+    "option_a": "To specify the database table name and other table-level details like schema or unique constraints, if different from default conventions.",
+    "option_b": "To mark the class as a database table.",
+    "option_c": "To define table relationships.",
+    "option_d": "To create an in-memory table for testing.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.287Z",
+    "order": 153
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 154,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which JPA annotation can be used to specify that an entity field should be mapped to a database column with a specific data type, for example, for temporal types?",
+    "option_a": "@Temporal (e.g., @Temporal(TemporalType.DATE)) or @Column(columnDefinition=\"...\")",
+    "option_b": "@DataType",
+    "option_c": "@DbType",
+    "option_d": "@ColumnType",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.288Z",
+    "order": 154
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 155,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the `orphanRemoval = true` attribute used for in JPA relationship annotations like `@OneToMany`?",
+    "option_a": "It indicates that if a child entity is removed from the parent's collection, the child entity itself should also be deleted from the database.",
+    "option_b": "It automatically removes orphaned foreign keys.",
+    "option_c": "It prevents child entities from being created without a parent.",
+    "option_d": "It cleans up database tables when the application shuts down.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.289Z",
+    "order": 155
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 156,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "How can Data Transfer Objects (DTOs) help in versioning an API?",
+    "option_a": "By allowing the API to expose different DTO structures for different API versions, while the internal entity model can remain more stable.",
+    "option_b": "DTOs automatically handle API version numbers in headers.",
+    "option_c": "DTOs are not related to API versioning.",
+    "option_d": "DTOs can only be used with one version of an API.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.289Z",
+    "order": 156
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 157,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring MVC annotation can be used to bind all request parameters or form data to a single command object (POJO)?",
+    "option_a": "@ModelAttribute",
+    "option_b": "@RequestBody",
+    "option_c": "@RequestParams",
+    "option_d": "@FormObject",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.289Z",
+    "order": 157
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 158,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary purpose of Jackson's `ObjectMapper().writeValueAsString(object)` method?",
+    "option_a": "To serialize a Java object into its JSON string representation.",
+    "option_b": "To write a Java object to a file in JSON format.",
+    "option_c": "To validate a Java object against a JSON schema.",
+    "option_d": "To convert a JSON string into a Java object.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.290Z",
+    "order": 158
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 159,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If you have multiple `@ControllerAdvice` beans in a Spring application, how can you control their order of execution?",
+    "option_a": "By implementing the `Ordered` interface or using the `@Order` annotation on the `@ControllerAdvice` classes.",
+    "option_b": "They are executed in alphabetical order of their class names.",
+    "option_c": "The order is non-deterministic.",
+    "option_d": "By defining them in a specific sequence in an XML configuration file.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.290Z",
+    "order": 159
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 160,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Logback, what is the primary purpose of a \"Marker\" in a logging event?",
+    "option_a": "To add a piece of metadata (a named tag) to a log event, which can then be used by filters to make decisions about processing the event.",
+    "option_b": "To mark the beginning and end of a log file.",
+    "option_c": "To indicate the severity of the log event.",
+    "option_d": "To highlight important log messages in the console.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.290Z",
+    "order": 160
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 161,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Boot Actuator endpoint provides detailed information about HTTP request-response exchanges if trace logging is enabled?",
+    "option_a": "/actuator/httptrace (or /actuator/httpexchanges in newer versions)",
+    "option_b": "/actuator/requests",
+    "option_c": "/actuator/apicalls",
+    "option_d": "/actuator/webtraffic",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.291Z",
+    "order": 161
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 162,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When implementing search functionality where results might be large, what common feature helps in retrieving data in manageable chunks?",
+    "option_a": "Pagination",
+    "option_b": "Full-text indexing",
+    "option_c": "Caching of all possible results",
+    "option_d": "Denormalization",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.291Z",
+    "order": 162
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 163,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In a Spring `RestTemplate` or `WebClient` call, what is the significance of setting the `Accept` HTTP header?",
+    "option_a": "It informs the server about the media types (e.g., `application/json`, `application/xml`) that the client is capable of understanding in the response.",
+    "option_b": "It specifies the content type of the request body.",
+    "option_c": "It provides authentication credentials.",
+    "option_d": "It indicates the preferred language for the response.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.291Z",
+    "order": 163
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 164,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When integrating with an external API that uses OAuth 2.0 for authentication, what is typically exchanged for an access token?",
+    "option_a": "An authorization code (or client credentials, refresh token, etc., depending on the grant type).",
+    "option_b": "A username and password.",
+    "option_c": "An API key.",
+    "option_d": "A session cookie.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.292Z",
+    "order": 164
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 165,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "For an API rate limiter based on a \"sliding window log\" algorithm, what is a key characteristic?",
+    "option_a": "It counts requests within a continuously moving time window, providing accurate rate limiting without the fixed window edge problems.",
+    "option_b": "It uses a fixed time window that resets periodically.",
+    "option_c": "It relies on a bucket of tokens.",
+    "option_d": "It only logs requests that exceed the limit.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.292Z",
+    "order": 165
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 166,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which HTTP response header might an API send back to a client to inform them about their current rate limit status (e.g., remaining requests)?",
+    "option_a": "X-RateLimit-Remaining",
+    "option_b": "Rate-Limit-Status",
+    "option_c": "API-Quota-Left",
+    "option_d": "X-Request-Count",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.292Z",
+    "order": 166
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 167,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using `@Cacheable(unless = \"#result == null\")` in Spring Cache, what does it imply?",
+    "option_a": "The result of the method will be cached unless the result itself is null.",
+    "option_b": "The method will not be called if the cache already contains a null value for the key.",
+    "option_c": "The cache will be cleared if the method returns null.",
+    "option_d": "Null results are always cached by default.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.293Z",
+    "order": 167
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 168,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "How does Spring Boot typically discover and configure a Redis connection factory when `spring-boot-starter-data-redis` is on the classpath and properties are set?",
+    "option_a": "Through auto-configuration, by detecting Redis client libraries (like Lettuce or Jedis) and relevant properties in `application.properties`/`yml`.",
+    "option_b": "It requires an explicit `@Bean` definition for `RedisConnectionFactory`.",
+    "option_c": "It uses a JNDI lookup for the Redis connection.",
+    "option_d": "It relies on a `redis.xml` configuration file.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.293Z",
+    "order": 168
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 169,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Git command is used to merge changes from another branch into the current branch?",
+    "option_a": "git merge <branch-name>",
+    "option_b": "git combine <branch-name>",
+    "option_c": "git integrate <branch-name>",
+    "option_d": "git pull-changes <branch-name>",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.293Z",
+    "order": 169
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 170,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In a `Dockerfile`, what is the primary purpose of using a multi-stage build (e.g., using multiple `FROM` instructions)?",
+    "option_a": "To create smaller final images by separating the build environment (with build tools, SDKs, dependencies) from the runtime environment (with only necessary artifacts).",
+    "option_b": "To build images for multiple architectures simultaneously.",
+    "option_c": "To create multiple related images from a single Dockerfile.",
+    "option_d": "To speed up the image build process by parallelizing steps.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.294Z",
+    "order": 170
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 171,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When `docker-compose` starts services, how can one service ensure it starts only after another service (e.g., a database) is ready (not just started)?",
+    "option_a": "Using `depends_on` with healthcheck conditions in `docker-compose.yml` or custom wait scripts.",
+    "option_b": "`depends_on` alone guarantees readiness.",
+    "option_c": "By ordering services alphabetically in `docker-compose.yml`.",
+    "option_d": "Docker Compose handles this automatically for all database services.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.294Z",
+    "order": 171
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 172,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary role of the `spring-boot-starter-validation` dependency in a Spring Boot project?",
+    "option_a": "It provides support for Bean Validation (JSR 303/380) using Hibernate Validator as the default implementation, enabling declarative validation via annotations.",
+    "option_b": "It validates the Spring Boot configuration itself.",
+    "option_c": "It provides tools for validating database schema.",
+    "option_d": "It validates REST API contracts against an OpenAPI specification.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.294Z",
+    "order": 172
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 173,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In JPA, what is an \"Embedded\" object (often annotated with `@Embeddable` for the class and `@Embedded` for the field)?",
+    "option_a": "A way to represent a composite object as part of an entity, where the fields of the embedded object are stored as columns in the owning entity's table.",
+    "option_b": "An entity that is always loaded eagerly.",
+    "option_c": "A reference to an entity stored in a different database.",
+    "option_d": "A lightweight version of an entity used for DTOs.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.295Z",
+    "order": 173
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 174,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the difference between `@Component`, `@Service`, `@Repository`, and `@Controller`/`@RestController` annotations in Spring?",
+    "option_a": "They are all stereotype annotations marking classes as Spring-managed beans, but `@Service` (business logic), `@Repository` (data access), and `@Controller`/`@RestController` (presentation layer) carry specific semantic meaning for their layers.",
+    "option_b": "Only `@Component` creates a Spring bean.",
+    "option_c": "`@Service` is for SOAP services, `@Controller` for REST.",
+    "option_d": "`@Repository` implies read-only operations.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.295Z",
+    "order": 174
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 175,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If a Spring bean method is annotated with `@Scheduled(cron = \"0 0 * * * ?\")`, when will it typically execute?",
+    "option_a": "Every hour at the beginning of the hour.",
+    "option_b": "Every minute.",
+    "option_c": "Once a day at midnight.",
+    "option_d": "Every second.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.295Z",
+    "order": 175
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 176,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Logback, what is a `RollingFileAppender` commonly used for?",
+    "option_a": "To write logs to a file that \"rolls over\" (e.g., is archived and replaced with a new file) based on criteria like time (e.g., daily) or size.",
+    "option_b": "To append logs to multiple files simultaneously.",
+    "option_c": "To roll back transactions if a log error occurs.",
+    "option_d": "To provide a rolling view of the latest log messages in the console.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.296Z",
+    "order": 176
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 177,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Boot Actuator endpoint can be used to view or even modify environment properties of a running application (if enabled and secured)?",
+    "option_a": "/actuator/env",
+    "option_b": "/actuator/config",
+    "option_c": "/actuator/properties",
+    "option_d": "/actuator/runtime",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.296Z",
+    "order": 177
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 178,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If you need to create a Spring Data JPA repository method that takes a `Sort` object as a parameter to dynamically order results, how would you typically declare it?",
+    "option_a": "`List<Entity> findBySomeProperty(String property, Sort sort);`",
+    "option_b": "`List<Entity> findAndSortBySomeProperty(String property, String sortDirection);`",
+    "option_c": "`@Sorted List<Entity> findBySomeProperty(String property);`",
+    "option_d": "Sorting is only possible via derived query method names.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.296Z",
+    "order": 178
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 179,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using `WebClient` to make a POST request with a JSON body, which method is typically used to specify the body content?",
+    "option_a": "`.bodyValue(object)` or `.body(BodyInserters.fromValue(object))`",
+    "option_b": "`.content(jsonString)`",
+    "option_c": "`.setBody(object)`",
+    "option_d": "`.sendJson(object)`",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.297Z",
+    "order": 179
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 180,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In the context of distributed systems and API integration, what does \"idempotency\" mean for an operation?",
+    "option_a": "Performing the operation multiple times with the same input has the same effect as performing it once (e.g., setting a value is idempotent, incrementing a counter is not).",
+    "option_b": "The operation completes very quickly.",
+    "option_c": "The operation does not change any state.",
+    "option_d": "The operation is guaranteed to succeed.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.297Z",
+    "order": 180
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 181,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a common strategy for handling API key rotation when integrating with external services?",
+    "option_a": "Store the API key in a configurable location (e.g., environment variable, secrets manager), and update it there when a new key is issued, without needing to redeploy the application.",
+    "option_b": "Hardcode the API key and redeploy on every key change.",
+    "option_c": "Generate API keys dynamically within the application.",
+    "option_d": "Use a single, non-expiring API key.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.298Z",
+    "order": 181
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 182,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using Spring's `@CacheEvict` annotation, how can you specify that the cache should be evicted only if a certain condition (based on method arguments or result) is met?",
+    "option_a": "Using the `condition` attribute with a SpEL expression.",
+    "option_b": "It's not possible; eviction is always unconditional.",
+    "option_c": "By throwing a specific exception to trigger eviction.",
+    "option_d": "Using a separate `@ConditionalEvict` annotation.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.298Z",
+    "order": 182
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 183,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Redis command is often used to set a key with an expiration time (Time To Live - TTL) in a single operation?",
+    "option_a": "SETEX <key> <seconds> <value>",
+    "option_b": "SET <key> <value> EX <seconds>",
+    "option_c": "EXPIRE <key> <seconds> followed by SET <key> <value>",
+    "option_d": "SETTTL <key> <seconds> <value>",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.298Z",
+    "order": 183
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 184,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Git, what is the primary purpose of the `git remote add origin <repository_url>` command?",
+    "option_a": "To add a new remote repository (typically named \"origin\") to your local Git configuration, allowing you to push to and pull from it.",
+    "option_b": "To create a local copy (origin) of a remote repository.",
+    "option_c": "To switch your current working branch to \"origin\".",
+    "option_d": "To initialize a new Git repository and set its origin.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.299Z",
+    "order": 184
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 185,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When loading configuration from `.env` files in a Spring Boot application (often via a library), how does this typically integrate with Spring's `Environment` abstraction?",
+    "option_a": "The properties from the `.env` file are loaded into Spring's `Environment`, making them accessible via `@Value` or `environment.getProperty()`.",
+    "option_b": "`.env` files are only for Docker environment variables.",
+    "option_c": "Spring Boot does not directly support `.env` files for its `Environment`.",
+    "option_d": "You must manually parse the `.env` file and set system properties.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.299Z",
+    "order": 185
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 186,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In a `Dockerfile`, if you `COPY . .` in the `WORKDIR /app`, what does this usually mean?",
+    "option_a": "It copies all files and directories from the Docker build context's root into the `/app` directory inside the image.",
+    "option_b": "It creates a symbolic link.",
+    "option_c": "It mounts the current host directory into the container's `/app`.",
+    "option_d": "It lists the contents of the `/app` directory.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.300Z",
+    "order": 186
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 187,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In `docker-compose.yml`, what is the `networks` section used for?",
+    "option_a": "To define custom networks that services can connect to, allowing for network isolation and communication control between container groups.",
+    "option_b": "To specify the host machine's network interfaces.",
+    "option_c": "To configure port forwarding rules.",
+    "option_d": "To limit network bandwidth for services.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.300Z",
+    "order": 187
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 188,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring annotation is used on a configuration class to indicate that it contains `@Bean` method declarations?",
+    "option_a": "@Configuration",
+    "option_b": "@EnableBeans",
+    "option_c": "@BeanSource",
+    "option_d": "@ComponentScan",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.301Z",
+    "order": 188
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 189,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the \"N+1 selects\" problem in JPA/Hibernate, and how can it impact performance?",
+    "option_a": "It's a performance issue where fetching a list of N parent entities results in N additional database queries to fetch their related child entities (one query per parent), instead of fetching them efficiently in one or a few queries.",
+    "option_b": "It means N+1 users are accessing the database simultaneously.",
+    "option_c": "It refers to having N+1 tables in a database schema.",
+    "option_d": "It's a problem with database connection pooling.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.301Z",
+    "order": 189
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 190,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When defining a custom exception that should result in an HTTP 404 Not Found status, which annotation can be placed directly on the exception class itself?",
+    "option_a": "@ResponseStatus(HttpStatus.NOT_FOUND)",
+    "option_b": "@ErrorCode(404)",
+    "option_c": "@NotFoundException",
+    "option_d": "@ReturnStatus(404)",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.301Z",
+    "order": 190
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 191,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary benefit of using a \"rolling update\" strategy during application deployment?",
+    "option_a": "It allows updating an application with zero or minimal downtime by gradually replacing old instances with new ones.",
+    "option_b": "It rolls back the application to the previous version if an error occurs.",
+    "option_c": "It updates all instances of the application simultaneously.",
+    "option_d": "It creates a backup of the application before updating.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.302Z",
+    "order": 191
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 192,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Spring Data JPA, what is a \"projection\" (e.g., using an interface-based projection)?",
+    "option_a": "A way to retrieve only a subset of an entity's attributes from the database, rather than the entire entity, which can improve performance and reduce data transfer.",
+    "option_b": "A pre-defined SQL view.",
+    "option_c": "A mechanism for projecting data onto a different database.",
+    "option_d": "A way to filter query results.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.302Z",
+    "order": 192
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 193,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which HTTP header typically indicates the content type of the entity body sent in a POST or PUT request?",
+    "option_a": "Content-Type",
+    "option_b": "Accept",
+    "option_c": "X-Payload-Type",
+    "option_d": "Body-Format",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.302Z",
+    "order": 193
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 194,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "How can Spring's `@Async` annotation be used?",
+    "option_a": "To execute a method asynchronously in a separate thread, typically managed by a Spring `TaskExecutor`.",
+    "option_b": "To make HTTP requests asynchronous.",
+    "option_c": "To ensure a method is called only once.",
+    "option_d": "To synchronize access to a shared resource.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.303Z",
+    "order": 194
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 195,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a \"health indicator\" in the context of Spring Boot Actuator?",
+    "option_a": "A component that provides health information about a specific part of the application (e.g., database, disk space, custom service), which is then aggregated by the main `/actuator/health` endpoint.",
+    "option_b": "A visual indicator on a dashboard showing application status.",
+    "option_c": "A log message indicating good health.",
+    "option_d": "A scheduled job that checks application health.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.303Z",
+    "order": 195
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 196,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Docker, what is the difference between a \"volume\" and a \"bind mount\"?",
+    "option_a": "Volumes are managed by Docker and stored in a part of the host filesystem dedicated to Docker, while bind mounts map a directory or file from the host filesystem directly into the container (less portable).",
+    "option_b": "Volumes are for configuration, bind mounts for data.",
+    "option_c": "Bind mounts are read-only, volumes are read-write.",
+    "option_d": "Volumes are temporary, bind mounts are persistent.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.303Z",
+    "order": 196
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 197,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a common use for the `Optional<T>` class introduced in Java 8, especially in service layers or repository methods?",
+    "option_a": "To represent a value that may be absent (null), providing a more explicit way to handle cases where data might not be found, thus helping to avoid `NullPointerExceptions`.",
+    "option_b": "To make method parameters optional.",
+    "option_c": "To provide an alternative to collections.",
+    "option_d": "To store multiple return values from a method.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.304Z",
+    "order": 197
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 198,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If a Spring Boot application fails to start due to a port conflict (e.g., \"Port 8080 already in use\"), what is a common way to specify a different port?",
+    "option_a": "By setting the `server.port` property in `application.properties` or `application.yml`, or via an environment variable/command-line argument.",
+    "option_b": "By recompiling the application with a new port number.",
+    "option_c": "By configuring the embedded web server (e.g., Tomcat) directly in Java code.",
+    "option_d": "The port cannot be changed once the application is built.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.304Z",
+    "order": 198
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 199,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Lombok annotation can be used to automatically generate a builder pattern for your class?",
+    "option_a": "@Builder",
+    "option_b": "@Build",
+    "option_c": "@ConstructorBuilder",
+    "option_d": "@MakeBuilder",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.305Z",
+    "order": 199
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 200,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Spring Boot, what property in `application.properties` is commonly used to define the active application profiles (e.g., dev, test, prod)?",
+    "option_a": "spring.profiles.active",
+    "option_b": "spring.active.profile",
+    "option_c": "spring.environment",
+    "option_d": "spring.profile.include",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.305Z",
+    "order": 200
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 201,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When a REST API successfully processes a DELETE request and there is no content to return, which HTTP status code is most appropriate?",
+    "option_a": "204 No Content",
+    "option_b": "200 OK",
+    "option_c": "202 Accepted",
+    "option_d": "404 Not Found",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.305Z",
+    "order": 201
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 202,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In JPA, what is the `@Embeddable` annotation used for?",
+    "option_a": "To declare a class whose instances can be stored as an intrinsic part of an owning entity, sharing its table.",
+    "option_b": "To make an entity cacheable.",
+    "option_c": "To define a database view.",
+    "option_d": "To allow an entity to be embedded in a web page.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.306Z",
+    "order": 202
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 203,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which JPA annotation would you use on a field of type `java.util.Date` or `java.util.Calendar` to specify whether to persist the date, time, or both?",
+    "option_a": "@Temporal(TemporalType.TIMESTAMP) / .DATE / .TIME",
+    "option_b": "@DateTimeFormat",
+    "option_c": "@DatePersistence",
+    "option_d": "@TimeFormat",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.306Z",
+    "order": 203
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 204,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a common strategy for managing bidirectional `@OneToMany`/`@ManyToOne` relationships in JPA to avoid issues like infinite loops during serialization or incorrect persistence?",
+    "option_a": "Ensure one side (typically the `@ManyToOne` side) is the \"owning\" side (manages the foreign key), and the other side uses `mappedBy`. Helper methods for adding/removing entities to keep both sides in sync are also good practice.",
+    "option_b": "Always make both sides EAGER fetched.",
+    "option_c": "Avoid bidirectional relationships altogether.",
+    "option_d": "Use DTOs exclusively for managing relationships.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.306Z",
+    "order": 204
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 205,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "How can DTOs be beneficial when dealing with complex entity graphs that have many relationships?",
+    "option_a": "They allow you to flatten or reshape the data for specific API responses, preventing over-fetching and circular dependencies that might occur if exposing entities directly.",
+    "option_b": "DTOs automatically resolve all lazy-loaded associations.",
+    "option_c": "DTOs enforce database normalization rules.",
+    "option_d": "DTOs are required for all JPA relationships.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.307Z",
+    "order": 205
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 206,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring annotation can be used to inject a list of all beans of a particular type?",
+    "option_a": "@Autowired private List<MyInterface> services;",
+    "option_b": "@InjectAll(MyInterface.class)",
+    "option_c": "@CollectBeans(type=MyInterface.class)",
+    "option_d": "@Qualifier(\"allMyInterfaces\")",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.307Z",
+    "order": 206
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 207,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a common use case for Jackson's `@JsonRawValue` annotation on a field?",
+    "option_a": "To serialize a field's string value directly as is, without further JSON escaping or quoting, useful if the string already contains valid JSON.",
+    "option_b": "To get the raw byte value of a JSON string.",
+    "option_c": "To ignore raw data during deserialization.",
+    "option_d": "To specify that a field should be deserialized from a raw binary stream.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.307Z",
+    "order": 207
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 208,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If a `@ControllerAdvice` class is annotated with `@Order(1)` and another with `@Order(2)`, which one will be given higher precedence for handling exceptions?",
+    "option_a": "The one annotated with `@Order(1)` (lower values have higher precedence).",
+    "option_b": "The one annotated with `@Order(2)` (higher values have higher precedence).",
+    "option_c": "The order is based on class name if `@Order` is the same.",
+    "option_d": "The order is non-deterministic.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.308Z",
+    "order": 208
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 209,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Logback, if you want to log messages from a specific package (e.g., `com.example.service`) at a DEBUG level, but the root logger is set to INFO, how would you configure this?",
+    "option_a": "Add a specific `<logger name=\"com.example.service\" level=\"DEBUG\"/>` element in the Logback configuration.",
+    "option_b": "Set the root logger to DEBUG and filter out other packages.",
+    "option_c": "Use a custom Java code configuration for that package.",
+    "option_d": "This cannot be done; package level logging inherits from root.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.308Z",
+    "order": 209
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 210,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Boot Actuator endpoint can provide information about scheduled tasks in your application?",
+    "option_a": "/actuator/scheduledtasks",
+    "option_b": "/actuator/tasks",
+    "option_c": "/actuator/scheduler",
+    "option_d": "/actuator/cronjobs",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.309Z",
+    "order": 210
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 211,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When implementing a search API, what is the benefit of using ETags (Entity Tags) in HTTP responses?",
+    "option_a": "They help in caching by allowing clients to make conditional requests (e.g., `If-None-Match`), so the server doesn't resend the full response if the data hasn't changed.",
+    "option_b": "They encrypt the search results.",
+    "option_c": "They provide a unique ID for each search query.",
+    "option_d": "They measure the performance of the search operation.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.309Z",
+    "order": 211
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 212,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using `RestTemplate` or `WebClient`, how can you add custom HTTP headers (e.g., a custom `X-Correlation-ID`) to all outgoing requests in a centralized way?",
+    "option_a": "By configuring the `RestTemplate`/`WebClient` with a `ClientHttpRequestInterceptor` (for RestTemplate) or an `ExchangeFilterFunction` (for WebClient).",
+    "option_b": "By manually adding the header to each request method call.",
+    "option_c": "By setting system properties for headers.",
+    "option_d": "Headers are automatically propagated from the incoming request.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.309Z",
+    "order": 212
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 213,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If an external API uses Basic Authentication, what information is typically encoded and sent in the `Authorization` HTTP header?",
+    "option_a": "A Base64 encoded string of \"username:password\".",
+    "option_b": "An OAuth 2.0 bearer token.",
+    "option_c": "An API key.",
+    "option_d": "A signed JWT.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.310Z",
+    "order": 213
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 214,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Resilience4j component can be used to automatically retry a failed operation (e.g., an external API call) a certain number of times?",
+    "option_a": "Retry",
+    "option_b": "CircuitBreaker",
+    "option_c": "RateLimiter",
+    "option_d": "Bulkhead",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.310Z",
+    "order": 214
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 215,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the \"Leaky Bucket\" algorithm in the context of rate limiting?",
+    "option_a": "It's an algorithm where requests are added to a bucket (queue) of fixed capacity. If the bucket is full, new requests are discarded. The bucket \"leaks\" requests at a constant rate.",
+    "option_b": "It allows bursts of requests.",
+    "option_c": "It uses time windows to count requests.",
+    "option_d": "It's primarily for bandwidth shaping, not request counting.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.310Z",
+    "order": 215
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 216,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Spring Cache, what does the `@Caching` annotation allow you to do?",
+    "option_a": "Group multiple caching annotations (like `@Cacheable`, `@CachePut`, `@CacheEvict`) on a single method.",
+    "option_b": "Enable caching for the entire application.",
+    "option_c": "Define global cache configurations.",
+    "option_d": "Specify a custom cache manager.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.311Z",
+    "order": 216
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 217,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the default port for a Redis server?",
+    "option_a": "6379",
+    "option_b": "5432",
+    "option_c": "3306",
+    "option_d": "8080",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.311Z",
+    "order": 217
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 218,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Git, what is the purpose of a \"commit message\"?",
+    "option_a": "To describe the changes made in that commit, providing context and history for other developers (and your future self).",
+    "option_b": "To tag a specific version of the code.",
+    "option_c": "To create a new branch.",
+    "option_d": "To store binary attachments with the commit.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.312Z",
+    "order": 218
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 219,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a common use case for the `USER` instruction in a `Dockerfile`?",
+    "option_a": "To set the user name (or UID) and optionally the group name (or GID) to use when running the image and for any subsequent `RUN`, `CMD`, and `ENTRYPOINT` instructions.",
+    "option_b": "To define environment variables for a specific user.",
+    "option_c": "To create a new user account on the host machine.",
+    "option_d": "To specify the user who built the Docker image.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.312Z",
+    "order": 219
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 220,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In `docker-compose.yml`, how can you specify that a service should be rebuilt from its `Dockerfile` every time `docker-compose up` is run, instead of using an existing image?",
+    "option_a": "By running `docker-compose up --build`.",
+    "option_b": "By adding `rebuild: always` to the service definition.",
+    "option_c": "`docker-compose up` always rebuilds by default.",
+    "option_d": "By deleting the image manually before running `up`.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.312Z",
+    "order": 220
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 221,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring annotation allows you to define a bean with a specific scope, such as \"request\" or \"session\" in a web application?",
+    "option_a": "@Scope(\"request\") or @RequestScope, @SessionScope, etc.",
+    "option_b": "@BeanScope(\"request\")",
+    "option_c": "@Scoped(value=\"request\")",
+    "option_d": "@Lifecycle(\"request\")",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.313Z",
+    "order": 221
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 222,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary function of the `spring-boot-starter-parent` in a Maven `pom.xml`?",
+    "option_a": "It provides sensible default configurations for Spring Boot applications, including dependency versions, plugin configurations, and Java version.",
+    "option_b": "It is the main application class for Spring Boot.",
+    "option_c": "It defines the parent class for all Spring components.",
+    "option_d": "It manages Spring profiles.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.313Z",
+    "order": 222
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 223,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In JPA, what does `CascadeType.MERGE` typically do?",
+    "option_a": "If the owning entity is merged (its state synchronized with the database), the merge operation cascades to associated entities.",
+    "option_b": "It merges all associated entities into a single database row.",
+    "option_c": "It deletes associated entities when the parent is merged.",
+    "option_d": "It creates new associated entities when the parent is merged.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.314Z",
+    "order": 223
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 224,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If you want to run some custom code when a Spring Boot application has started successfully, which interface can you implement?",
+    "option_a": "`ApplicationRunner` or `CommandLineRunner`.",
+    "option_b": "`SpringApplicationListener`.",
+    "option_c": "`ContextRefreshedEvent`.",
+    "option_d": "`PostConstruct` on a specific bean.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.314Z",
+    "order": 224
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 225,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When constructing a `ResponseEntity`, how can you add a custom HTTP header to the response?",
+    "option_a": "Using the `.header(\"Header-Name\", \"Header-Value\")` method on the `ResponseEntity.BodyBuilder`.",
+    "option_b": "Headers are automatically added based on the response body.",
+    "option_c": "By setting static fields in a `HttpHeaders` class.",
+    "option_d": "Via `application.properties`.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.314Z",
+    "order": 225
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 226,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Logback or other logging frameworks, what is an \"asynchronous appender\" used for?",
+    "option_a": "To decouple log I/O operations from the application threads, improving application performance by handing off logging events to a separate thread for processing and writing.",
+    "option_b": "To log messages from asynchronous methods only.",
+    "option_c": "To send logs to a remote server asynchronously.",
+    "option_d": "To ensure logs are written in a strict chronological order across threads.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.315Z",
+    "order": 226
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 227,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Boot Actuator endpoint can be used to get details about the available caches and their content (if supported by the cache manager)?",
+    "option_a": "/actuator/caches",
+    "option_b": "/actuator/cache",
+    "option_c": "/actuator/cachedata",
+    "option_d": "/actuator/springcache",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.315Z",
+    "order": 227
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 228,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If you need to construct a dynamic JPA query at runtime based on several optional search criteria, which Spring Data JPA feature is often more flexible than derived query names?",
+    "option_a": "Using Specifications (with `JpaSpecificationExecutor`) or Querydsl.",
+    "option_b": "Writing a very long derived query method name.",
+    "option_c": "Using native SQL queries exclusively.",
+    "option_d": "Manually building JPQL strings in the service layer.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.315Z",
+    "order": 228
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 229,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When `WebClient` is used to consume an external API, how can you typically handle specific HTTP error statuses (e.g., 404, 500) from the external API in a reactive way?",
+    "option_a": "Using `.onStatus(predicate, errorHandlerFunction)` on the `ResponseSpec`.",
+    "option_b": "By catching `WebClientResponseException` and checking its status code.",
+    "option_c": "`WebClient` automatically retries on all errors.",
+    "option_d": "By configuring a global `ControllerAdvice` for `WebClient`.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.316Z",
+    "order": 229
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 230,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the purpose of a \"refresh token\" in OAuth 2.0?",
+    "option_a": "To allow a client to obtain a new access token without requiring the user to re-authenticate, after the original access token has expired.",
+    "option_b": "It's a token that refreshes the user's session data.",
+    "option_c": "It's used to refresh the list of available API scopes.",
+    "option_d": "It's an alternative to an access token with longer validity.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.316Z",
+    "order": 230
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 231,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Spring Cache, if a method annotated with `@Cacheable` throws an exception, will the exception itself be cached by default?",
+    "option_a": "No, by default, exceptions are not cached, and the method will be executed again on the next call.",
+    "option_b": "Yes, the exception is cached and re-thrown on subsequent calls.",
+    "option_c": "Only `RuntimeException`s are cached.",
+    "option_d": "Caching behavior on exception depends on the cache provider.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.317Z",
+    "order": 231
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 232,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the Redis `FLUSHDB` command used for?",
+    "option_a": "To remove all keys from the currently selected Redis database.",
+    "option_b": "To save the current database state to disk.",
+    "option_c": "To flush the Redis server's log file.",
+    "option_d": "To reload the Redis configuration.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.317Z",
+    "order": 232
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 233,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Git, what is a \"merge conflict,\" and when does it typically occur?",
+    "option_a": "When Git is unable to automatically combine changes from different branches because there are conflicting modifications to the same part(s) of the same file(s); manual intervention is required.",
+    "option_b": "When two developers try to commit to the same branch simultaneously.",
+    "option_c": "When a branch is deleted.",
+    "option_d": "When a remote repository is unavailable.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.317Z",
+    "order": 233
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 234,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "How can you make environment variables defined in a `.env` file available to a Spring Boot application running directly (not in Docker)?",
+    "option_a": "By using a library (e.g., `dotenv-java` or similar) that loads the `.env` file and populates system properties or environment variables at startup, or by sourcing the .env file in the shell before running.",
+    "option_b": "Spring Boot automatically loads `.env` files from the classpath.",
+    "option_c": "You must convert the `.env` file to `application.properties`.",
+    "option_d": "This is only possible with Docker.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.318Z",
+    "order": 234
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 235,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In a multi-stage `Dockerfile`, how do you copy artifacts (like a compiled JAR file) from an earlier \"build\" stage to a later \"runtime\" stage?",
+    "option_a": "Using the `COPY --from=<stage_name_or_index> <source_path> <destination_path>` instruction.",
+    "option_b": "Files are automatically shared between all stages.",
+    "option_c": "By defining a shared volume between stages.",
+    "option_d": "By using `ADD --from=<stage_name>`.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.318Z",
+    "order": 235
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 236,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In `docker-compose.yml`, what is the `restart: always` policy for a service typically used for?",
+    "option_a": "To ensure that the container will always be restarted if it stops for any reason (e.g., crashes or the Docker daemon restarts), unless explicitly stopped.",
+    "option_b": "To restart the service every hour.",
+    "option_c": "To restart the service only if it exits with a non-zero status code.",
+    "option_d": "To perform a rolling restart when the configuration changes.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.319Z",
+    "order": 236
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 237,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which annotation in Spring is used to define a method whose return value should be registered as a bean in the application context, typically within a `@Configuration` class?",
+    "option_a": "@Bean",
+    "option_b": "@ProduceBean",
+    "option_c": "@FactoryMethod",
+    "option_d": "@Singleton",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.319Z",
+    "order": 237
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 238,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a common way to handle database schema migrations in a Spring Boot application (a topic related to managing database changes over time)?",
+    "option_a": "Using a dedicated database migration tool like Flyway or Liquibase.",
+    "option_b": "Relying solely on `spring.jpa.hibernate.ddl-auto=update`.",
+    "option_c": "Manually applying SQL scripts during each deployment.",
+    "option_d": "Letting developers update the schema directly on the production database.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.320Z",
+    "order": 238
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 239,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When creating a custom `JsonSerializer` in Jackson, which method of the `JsonSerializer` base class must be overridden to implement the custom serialization logic?",
+    "option_a": "`serialize(T value, JsonGenerator gen, SerializerProvider serializers)`",
+    "option_b": "`toJson(T value)`",
+    "option_c": "`convert(T value, JsonGenerator gen)`",
+    "option_d": "`writeObject(T value, JsonGenerator gen)`",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.320Z",
+    "order": 239
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 240,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In terms_of_API design, what does HATEOAS (Hypermedia as the Engine of Application State) promote?",
+    "option_a": "Including links within API responses that guide clients on how to navigate to related resources or perform further actions, making the API more discoverable.",
+    "option_b": "Using only HTML as the response format.",
+    "option_c": "Ensuring all API state is managed by the client.",
+    "option_d": "Versioning APIs through hypermedia links.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.321Z",
+    "order": 240
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 241,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If Spring Data JPA repository method returns `Page<Entity>`, what information does the `Page` object contain besides the list of entities for the current page?",
+    "option_a": "Pagination metadata, such as total number of elements, total pages, current page number, page size, and sorting information.",
+    "option_b": "Only the list of entities and the current page number.",
+    "option_c": "The raw SQL query used.",
+    "option_d": "The time taken to fetch the data.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.321Z",
+    "order": 241
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 242,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which HTTP header is typically used to pass an authentication token (like a JWT or OAuth bearer token) to a secured API?",
+    "option_a": "Authorization",
+    "option_b": "X-Auth-Token",
+    "option_c": "Security-Token",
+    "option_d": "Access-Key",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.321Z",
+    "order": 242
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 243,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary benefit of using constructor-based dependency injection over field-based injection in Spring?",
+    "option_a": "It allows dependencies to be declared as `final`, ensuring they are initialized during construction and promoting immutability; it also makes testing easier and dependencies more explicit.",
+    "option_b": "It is faster at runtime.",
+    "option_c": "It requires less code.",
+    "option_d": "It supports circular dependencies more easily.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.322Z",
+    "order": 243
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 244,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Boot Actuator \"health indicator\" would typically report on the status of the connection to a configured relational database?",
+    "option_a": "DataSourceHealthIndicator (or similar, often named after the datasource)",
+    "option_b": "DatabaseStatusContributor",
+    "option_c": "JpaHealthCheck",
+    "option_d": "SqlConnectivityIndicator",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.322Z",
+    "order": 244
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 245,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using Docker volumes to persist database data, where is the actual data typically stored on the host machine if you use a named volume?",
+    "option_a": "In a directory managed by Docker within its own storage area (e.g., `/var/lib/docker/volumes/` on Linux).",
+    "option_b": "Directly in the project's source code directory.",
+    "option_c": "In a temporary directory that is cleared on Docker restart.",
+    "option_d": "The data is only stored inside the container.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.323Z",
+    "order": 245
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 246,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the `spring.application.name` property in `application.properties` commonly used for?",
+    "option_a": "To set a logical name for the application, which can be used by logging, Actuator, service discovery, and other components.",
+    "option_b": "To define the main class of the application.",
+    "option_c": "To specify the context path for the web server.",
+    "option_d": "To name the JAR file produced by the build.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.323Z",
+    "order": 246
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 247,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which testing annotation in Spring Boot is often used for focused testing of the web layer (controllers, Spring MVC configuration) without loading the entire application context?",
+    "option_a": "@WebMvcTest",
+    "option_b": "@ControllerTest",
+    "option_c": "@SliceTest(web=true)",
+    "option_d": "@HttpLayerTest",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.324Z",
+    "order": 247
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 248,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Lombok annotation is useful for generating a constructor with arguments for fields marked with `@NonNull` or final fields?",
+    "option_a": "@RequiredArgsConstructor",
+    "option_b": "@AllArgsConstructor",
+    "option_c": "@SelectiveConstructor",
+    "option_d": "@NonNullConstructor",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.324Z",
+    "order": 248
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 249,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Spring Boot, what does the property `spring.jpa.show-sql=true` in `application.properties` typically do?",
+    "option_a": "It configures the underlying JPA provider (e.g., Hibernate) to log all executed SQL statements to the console.",
+    "option_b": "It displays SQL results directly in the API response.",
+    "option_c": "It enables a SQL query interface at an Actuator endpoint.",
+    "option_d": "It validates the SQL syntax in `*.sql` files.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.325Z",
+    "order": 249
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 250,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a common use case for the HTTP HEAD method in a REST API?",
+    "option_a": "To retrieve only the headers of a response that would have been returned for a GET request, without the response body, often used to check resource metadata like `Content-Length` or `Last-Modified`.",
+    "option_b": "To create a new resource with only header information.",
+    "option_c": "To update the headers of an existing resource.",
+    "option_d": "To get the head (first few lines) of a resource's content.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.325Z",
+    "order": 250
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 251,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In JPA, if an entity field represents a large text block, which annotation can be used to suggest mapping it to a CLOB (Character Large Object) or similar large text type in the database?",
+    "option_a": "@Lob",
+    "option_b": "@LargeText",
+    "option_c": "@ClobField",
+    "option_d": "@TextualData",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.325Z",
+    "order": 251
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 252,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which JPA annotation is used to define that a collection of basic types (e.g., `List<String>`) or embeddable objects should be stored as part of an entity, often in a separate table?",
+    "option_a": "@ElementCollection",
+    "option_b": "@CollectionTable",
+    "option_c": "@EmbeddedList",
+    "option_d": "@ValueCollection",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.326Z",
+    "order": 252
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 253,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When managing a `@ManyToMany` relationship in JPA, what is often required if additional columns are needed in the join table itself (beyond just the foreign keys)?",
+    "option_a": "The many-to-many relationship needs to be modeled as two one-to-many relationships with an intermediate entity class representing the join table with extra fields.",
+    "option_b": "Use the `@JoinTableColumns` annotation.",
+    "option_c": "This is not possible in JPA.",
+    "option_d": "Use native SQL to manage the join table.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.326Z",
+    "order": 253
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 254,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "How can using DTOs help in aggregating data from multiple entities or services for a single API response?",
+    "option_a": "A DTO can be designed to hold a composite structure, combining fields from different sources into a tailored response object, simplifying client consumption.",
+    "option_b": "DTOs automatically fetch and join data from related entities.",
+    "option_c": "DTOs have built-in aggregation functions.",
+    "option_d": "DTOs are only for single entity representations.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.327Z",
+    "order": 254
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 255,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring AOP (Aspect-Oriented Programming) term describes the action taken by an aspect at a particular join point (e.g., method execution)?",
+    "option_a": "Advice (e.g., @Before, @After, @Around)",
+    "option_b": "Pointcut",
+    "option_c": "Aspect",
+    "option_d": "Target Object",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.327Z",
+    "order": 255
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 256,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the purpose of Jackson's `@JsonCreator` annotation, often used with static factory methods or constructors?",
+    "option_a": "To indicate that the annotated constructor or factory method should be used for creating instances of the class during JSON deserialization.",
+    "option_b": "To specify who created the JSON content.",
+    "option_c": "To filter JSON content based on the creator.",
+    "option_d": "To automatically create JSON schemas.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.328Z",
+    "order": 256
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 257,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If you have a custom exception, say `ProductNotFoundException`, and you want it to result in an HTTP 404 status specifically when thrown from a controller, where is `@ResponseStatus(HttpStatus.NOT_FOUND)` most appropriately placed?",
+    "option_a": "Directly on the `ProductNotFoundException` class itself.",
+    "option_b": "On every controller method that might throw it.",
+    "option_c": "In a global configuration file for exceptions.",
+    "option_d": "Within the `catch` block in the service layer.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.328Z",
+    "order": 257
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 258,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Logback, what is a \"TurboFilter\" often used for?",
+    "option_a": "To make very fast filtering decisions based on context (like MDC values, markers, log level, logger name) even before a `LoggingEvent` object is fully constructed, for performance-critical filtering.",
+    "option_b": "To speed up log file rotation.",
+    "option_c": "To filter logs based on user roles.",
+    "option_d": "To compress log messages in real-time.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.329Z",
+    "order": 258
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 259,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Boot Actuator endpoint provides information about the application's environment, including profiles, system properties, and environment variables?",
+    "option_a": "/actuator/env",
+    "option_b": "/actuator/environment",
+    "option_c": "/actuator/configprops",
+    "option_d": "/actuator/system",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.329Z",
+    "order": 259
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 260,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When designing a search API, what is a key consideration for validating search query parameters, such as `query=...`?",
+    "option_a": "Ensure the query parameter is not empty, meets length constraints (if any), and possibly sanitize it to prevent injection attacks if used in raw queries (though JPA usually handles this for JPQL).",
+    "option_b": "Allow any query string without validation.",
+    "option_c": "Only accept predefined query keywords.",
+    "option_d": "Ensure the query string is Base64 encoded.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.330Z",
+    "order": 260
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 261,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using `RestTemplate` to exchange data with an external API, which method allows you to specify the HTTP method, request entity (headers and body), and response type more flexibly?",
+    "option_a": "exchange(String url, HttpMethod method, HttpEntity<?> requestEntity, Class<T> responseType, Object... uriVariables)",
+    "option_b": "postForObject(...) or getForObject(...)",
+    "option_c": "execute(String url, HttpMethod method, ...)",
+    "option_d": "sendAndReceive(...)",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.330Z",
+    "order": 261
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 262,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If an external API uses an API key that needs to be sent as a query parameter (e.g., `?apiKey=XYZ`), how would you typically append this to the URL when using `RestTemplate` or `WebClient`?",
+    "option_a": "By using a `UriComponentsBuilder` to construct the URL with the query parameter, or by including it in the URI string with placeholders.",
+    "option_b": "The API key is automatically added if present in `application.properties`.",
+    "option_c": "API keys should only be sent in headers.",
+    "option_d": "By setting a global `RestTemplate` property for API keys.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.331Z",
+    "order": 262
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 263,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Resilience4j component is designed to stop making requests to a failing service for a period after a certain number of failures, preventing further load on the struggling service?",
+    "option_a": "CircuitBreaker",
+    "option_b": "Retry",
+    "option_c": "Bulkhead",
+    "option_d": "TimeLimiter",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.331Z",
+    "order": 263
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 264,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a potential downside of a very short time window (e.g., 1 second) for API rate limiting if not combined with a burst capacity?",
+    "option_a": "It might penalize legitimate clients making closely spaced, non-abusive requests, leading to a poor user experience.",
+    "option_b": "It consumes excessive server memory.",
+    "option_c": "It makes the API less secure.",
+    "option_d": "It cannot prevent DoS attacks.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.331Z",
+    "order": 264
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 265,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using Spring's `@CachePut` annotation, what is its primary behavior regarding method execution and cache interaction?",
+    "option_a": "The method is always executed, and its result is placed into the cache, potentially overwriting an existing entry.",
+    "option_b": "The method is executed only if the data is not in the cache.",
+    "option_c": "It retrieves data from the cache without executing the method.",
+    "option_d": "It removes data from the cache before executing the method.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.332Z",
+    "order": 265
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 266,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If you need to programmatically interact with Spring's cache abstraction (e.g., to retrieve, put, or evict entries outside of annotations), what Spring-managed bean would you typically inject?",
+    "option_a": "CacheManager",
+    "option_b": "RedisTemplate (if using Redis directly, not just through abstraction)",
+    "option_c": "CacheService",
+    "option_d": "CacheAccessor",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.332Z",
+    "order": 266
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 267,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Git, what is the `git stash` command useful for?",
+    "option_a": "To temporarily save your uncommitted local modifications (staged and unstaged) without creating a commit, allowing you to switch branches or work on something else, and then reapply the changes later.",
+    "option_b": "To delete uncommitted changes permanently.",
+    "option_c": "To archive old commits.",
+    "option_d": "To create a backup of the remote repository.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.332Z",
+    "order": 267
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 268,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In a `Dockerfile`, if you need to run commands as a non-root user for security reasons, which instruction should you use before those commands?",
+    "option_a": "USER <username_or_UID>",
+    "option_b": "RUN_AS <username>",
+    "option_c": "SET_USER <username>",
+    "option_d": "SUDO <username>",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.333Z",
+    "order": 268
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 269,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using `docker-compose`, if you want to view the logs of all running services defined in your `docker-compose.yml` file, what command would you use?",
+    "option_a": "docker-compose logs -f (the -f flag follows the log output)",
+    "option_b": "docker-compose show-logs",
+    "option_c": "docker-compose status --logs",
+    "option_d": "docker-compose print-logs",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.333Z",
+    "order": 269
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 270,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is Spring Expression Language (SpEL) often used for within Spring annotations like `@Cacheable(key = \"#argument.id\")` or `@PreAuthorize(\"hasRole('ADMIN')\")`?",
+    "option_a": "To evaluate expressions at runtime, allowing access to method arguments, bean properties, system properties, and execution of simple logic for conditional behavior or dynamic value generation.",
+    "option_b": "To define SQL-like queries.",
+    "option_c": "To write unit test conditions.",
+    "option_d": "To configure XML bean definitions.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.333Z",
+    "order": 270
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 271,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Boot \"starter\" is essential for building applications that serve RESTful APIs using Spring MVC and an embedded web server like Tomcat?",
+    "option_a": "spring-boot-starter-web",
+    "option_b": "spring-boot-starter-rest",
+    "option_c": "spring-boot-starter-api",
+    "option_d": "spring-boot-starter-json",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.334Z",
+    "order": 271
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 272,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In JPA, what is the purpose of the `@Version` annotation on an entity field (e.g., `private Long version;`)?",
+    "option_a": "To enable optimistic locking, where the version number is incremented on each update, and updates fail if the version in the database doesn't match the version of the entity being updated.",
+    "option_b": "To track the version of the JPA specification being used.",
+    "option_c": "To define different versions of an entity for API evolution.",
+    "option_d": "To store the application version that last modified the entity.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.334Z",
+    "order": 272
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 273,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If a Spring bean implements the `DisposableBean` interface, which method must it implement, and when is it called?",
+    "option_a": "`destroy()`, called by the Spring container just before the bean is removed from the context during application shutdown or bean destruction.",
+    "option_b": "`dispose()`, called after garbage collection.",
+    "option_c": "`cleanup()`, called after each method invocation.",
+    "option_d": "`shutdown()`, called when an error occurs.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.335Z",
+    "order": 273
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 274,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When returning a `ResponseEntity<Void>` from a Spring MVC controller, what does it typically signify?",
+    "option_a": "The HTTP response should have an empty body, often used with status codes like 201 Created (with Location header) or 204 No Content.",
+    "option_b": "The response is void of any meaning.",
+    "option_c": "An error occurred, and no response body is available.",
+    "option_d": "The request was not understood.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.335Z",
+    "order": 274
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 275,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Logback, what does the `additivity` attribute of a `<logger>` element control?",
+    "option_a": "If `additivity=\"false\"`, it prevents log messages handled by this logger from also being processed by appenders attached to its ancestor loggers (e.g., the root logger).",
+    "option_b": "It controls how many appenders can be attached to a logger.",
+    "option_c": "It specifies if log levels should be additive.",
+    "option_d": "It enables adding custom fields to log messages.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.335Z",
+    "order": 275
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 276,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Boot Actuator endpoint can be used to retrieve the current effective logging levels for different packages/loggers and potentially modify them at runtime?",
+    "option_a": "/actuator/loggers",
+    "option_b": "/actuator/logging/levels",
+    "option_c": "/actuator/logconfig",
+    "option_d": "/actuator/setLogLevel",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.336Z",
+    "order": 276
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 277,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If a Spring Data JPA repository method needs to return only specific fields of an entity (a projection) and you define an interface for this projection, how does Spring Data JPA typically implement it?",
+    "option_a": "It creates a proxy instance of the projection interface at runtime, populating it with data fetched from the selected columns.",
+    "option_b": "You must provide a concrete class implementing the projection interface.",
+    "option_c": "Projections are only possible with DTO classes.",
+    "option_d": "It requires a custom `@Query` with a constructor expression.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.336Z",
+    "order": 277
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 278,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When `RestTemplate` or `WebClient` encounters an HTTP status code that indicates an error (e.g., 4xx or 5xx), what is the default behavior if no custom error handler is configured?",
+    "option_a": "It throws an exception (e.g., `HttpClientErrorException` for 4xx, `HttpServerErrorException` for 5xx).",
+    "option_b": "It returns `null` or an empty `Optional`.",
+    "option_c": "It logs the error and returns a default response object.",
+    "option_d": "It automatically retries the request.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.336Z",
+    "order": 278
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 279,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In the context of OAuth 2.0, what is a \"scope\"?",
+    "option_a": "A mechanism to limit an application's access to a user's account. An application requests one or more scopes, and the access token issued is limited to those scopes.",
+    "option_b": "The geographic region where the API can be accessed.",
+    "option_c": "The time duration for which an access token is valid.",
+    "option_d": "The encryption algorithm used for tokens.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.337Z",
+    "order": 279
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 280,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using `@CacheEvict(allEntries = true)`, what is the expected behavior?",
+    "option_a": "All entries in the specified cache(s) are removed.",
+    "option_b": "Only entries created by the current user are evicted.",
+    "option_c": "It evicts entries older than a certain age.",
+    "option_d": "It requires a specific key to evict all entries.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.337Z",
+    "order": 280
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 281,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the primary purpose of the Redis `PING` command?",
+    "option_a": "To check if the Redis server is alive and responsive; it usually returns \"PONG\".",
+    "option_b": "To measure the latency to the Redis server.",
+    "option_c": "To list all active client connections.",
+    "option_d": "To get server statistics.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.337Z",
+    "order": 281
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 282,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Git, what does \"rebasing\" a branch (e.g., `git rebase main` while on a feature branch) typically do?",
+    "option_a": "It reapplies the commits from the current branch on top of the tip of the specified base branch (e.g., `main`), often resulting in a cleaner, more linear history compared to merging.",
+    "option_b": "It merges the specified branch into the current branch.",
+    "option_c": "It creates a new branch that is a copy of the current branch.",
+    "option_d": "It deletes the current branch and recreates it from the base branch.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.338Z",
+    "order": 282
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 283,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If you have both `application.properties` and `application-dev.properties` in your Spring Boot project, how do you activate the `dev` profile to use `application-dev.properties` (which will override or supplement `application.properties`)?",
+    "option_a": "By setting `spring.profiles.active=dev` (e.g., as an environment variable, system property, or in `application.properties` itself).",
+    "option_b": "Spring Boot automatically detects and uses all `application-*.properties` files.",
+    "option_c": "By renaming `application-dev.properties` to `application.properties`.",
+    "option_d": "By using the `@Profile(\"dev\")` annotation on the main application class.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.338Z",
+    "order": 283
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 284,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In a `Dockerfile`, what is the difference between `COPY` and `ADD` instructions?",
+    "option_a": "Both copy files/directories into the image, but `ADD` has additional features like automatically extracting local tar files and supporting URLs as a source (though using `COPY` is generally preferred for simple local file copying).",
+    "option_b": "`COPY` is for text files, `ADD` for binaries.",
+    "option_c": "`ADD` is for directories, `COPY` for files.",
+    "option_d": "There is no functional difference.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.338Z",
+    "order": 284
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 285,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In `docker-compose.yml`, what is the `depends_on` condition primarily used for?",
+    "option_a": "To specify service dependencies, controlling the startup order of services (i.e., a service will start only after its dependencies have started). It does not guarantee readiness of the dependency.",
+    "option_b": "To link environment variables between services.",
+    "option_c": "To define network aliases.",
+    "option_d": "To share volumes between services.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.339Z",
+    "order": 285
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 286,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which annotation is fundamental for enabling Spring Boot's auto-configuration capabilities?",
+    "option_a": "@EnableAutoConfiguration (which is part of @SpringBootApplication)",
+    "option_b": "@AutoConfigure",
+    "option_c": "@SpringConfig",
+    "option_d": "@MagicConfig",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.339Z",
+    "order": 286
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 287,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the HTTP `Content-Length` header used for?",
+    "option_a": "To indicate the size of the message body in bytes.",
+    "option_b": "To specify the maximum allowed length for the request URL.",
+    "option_c": "To define the content type of the response.",
+    "option_d": "To set a limit on the number of concurrent requests.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.340Z",
+    "order": 287
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 288,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In JPA, if an entity A has a `@OneToMany` relationship to a collection of entity B, and B has a `@ManyToOne` relationship back to A, which side is typically the \"owning\" side of the relationship that manages the foreign key?",
+    "option_a": "The `@ManyToOne` side (entity B) usually holds the foreign key column and is considered the owning side.",
+    "option_b": "The `@OneToMany` side (entity A) is always the owning side.",
+    "option_c": "Both sides are owning sides by default.",
+    "option_d": "The owning side is determined by the `CascadeType`.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.340Z",
+    "order": 288
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 289,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the main benefit of using a `java.time.OffsetDateTime` or `java.time.ZonedDateTime` over `java.util.Date` or `java.sql.Timestamp` for handling date-time information with time zones?",
+    "option_a": "They provide more comprehensive and less ambiguous handling of time zones and offsets from UTC, reducing common date-time bugs.",
+    "option_b": "They are faster to serialize/deserialize.",
+    "option_c": "They consume less memory.",
+    "option_d": "They are directly supported by all database drivers without conversion.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.340Z",
+    "order": 289
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 290,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Logback, what is the purpose of the `<root>` logger element in the configuration file?",
+    "option_a": "It defines the default logging level and appenders for all loggers in the application, unless overridden by more specific logger configurations.",
+    "option_b": "It is the logger for the root user of the system.",
+    "option_c": "It logs only exceptions that reach the root of the call stack.",
+    "option_d": "It specifies the root directory for log files.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.341Z",
+    "order": 290
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 291,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring Boot Actuator health indicator automatically checks for available disk space?",
+    "option_a": "DiskSpaceHealthIndicator",
+    "option_b": "StorageHealthContributor",
+    "option_c": "FileSystemAvailabilityProvider",
+    "option_d": "DriveCapacityMonitor",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.341Z",
+    "order": 291
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 292,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using Spring `WebClient` for a reactive HTTP call, which operator is often used on the resulting `Mono` or `Flux` to transform the emitted data item(s)?",
+    "option_a": "map()",
+    "option_b": "transform()",
+    "option_c": "convert()",
+    "option_d": "process()",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.341Z",
+    "order": 292
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 293,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is a primary difference between Basic Authentication and Bearer Token Authentication (e.g., with JWTs or OAuth)?",
+    "option_a": "Basic Auth sends username/password (Base64 encoded) with every request, while Bearer Token Auth sends a self-contained token that the server validates, often without needing to look up credentials for each request.",
+    "option_b": "Basic Auth is more secure than Bearer Token.",
+    "option_c": "Bearer Tokens are only for internal services.",
+    "option_d": "Basic Auth uses encryption, Bearer Tokens do not.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.342Z",
+    "order": 293
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 294,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "If you use `@CacheEvict(key = \"#userId\", beforeInvocation = true)` on a method `deleteUser(Long userId)`, what does `beforeInvocation = true` signify?",
+    "option_a": "The cache eviction will occur *before* the `deleteUser` method is executed.",
+    "option_b": "The cache eviction will only happen if the method invocation is successful.",
+    "option_c": "The method will be invoked before the cache key is determined.",
+    "option_d": "It's relevant only if `allEntries` is also true.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.342Z",
+    "order": 294
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 295,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What does the Redis `KEYS *` command do, and why should it be used with caution in a production environment?",
+    "option_a": "It returns all keys in the currently selected database. It should be used with caution in production as it can be slow and block the server when dealing with a very large number of keys.",
+    "option_b": "It returns all Redis server configuration keys.",
+    "option_c": "It encrypts all keys in the database.",
+    "option_d": "It provides statistics about key usage.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.342Z",
+    "order": 295
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 296,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "In Git, what is the primary difference between `git fetch` and `git pull`?",
+    "option_a": "`git fetch` retrieves changes from a remote repository but does not merge them into your local working branch, while `git pull` (which is essentially `git fetch` followed by `git merge` or `git rebase`) fetches changes and immediately tries to integrate them.",
+    "option_b": "`git pull` is for uploading, `git fetch` for downloading.",
+    "option_c": "`git fetch` works only with the `origin` remote.",
+    "option_d": "There is no difference.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.343Z",
+    "order": 296
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 297,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "When using environment variables with Docker and `docker-compose`, how can you ensure that certain environment variables are available *only* during the Docker image build process but not in the running container?",
+    "option_a": "By using `ARG` in the `Dockerfile` for build-time variables and `ENV` for runtime variables. If a build-arg has the same name as an env var, the env var in the image takes precedence unless it's set from the ARG without a value in ENV.",
+    "option_b": "All `ARG` values are automatically passed to the running container.",
+    "option_c": "By prefixing build-time variables with `BUILD_` in the `.env` file.",
+    "option_d": "Environment variables cannot be restricted to build time only.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.343Z",
+    "order": 297
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 298,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "What is the purpose of the `HEALTHCHECK` instruction in a `Dockerfile`?",
+    "option_a": "To define a command that Docker can run inside the container to determine if the application is healthy (e.g., an API endpoint returns 200 OK). This status can be used by orchestrators.",
+    "option_b": "To install health monitoring tools in the image.",
+    "option_c": "To perform a security scan of the image.",
+    "option_d": "To set the `/actuator/health` endpoint.",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.343Z",
+    "order": 298
+  }
+},
+{
+  "model": "quiz.question",
+  "pk": 299,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "text": "Which Spring annotation is often used in integration tests to replace a specific bean in the application context with a mock implementation (e.g., a Mockito mock)?",
+    "option_a": "@MockBean",
+    "option_b": "@ReplaceBean",
+    "option_c": "@TestBean",
+    "option_d": "@SubstituteBean",
+    "correct_option": "A",
+    "created_at": "2025-05-17T04:21:26.344Z",
+    "order": 299
+  }
+},
+{
+  "model": "quiz.session",
+  "pk": 17,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "name": "ERSYN",
+    "mode": "O",
+    "question_count": 3,
+    "created_at": "2025-05-17T12:47:00.226Z",
+    "start_time": "2025-05-17T12:47:00.225Z",
+    "end_time": "2025-05-17T12:52:28.385Z",
+    "status": "C",
+    "duration": 60
+  }
+},
+{
+  "model": "quiz.session",
+  "pk": 18,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "name": "ERSYN (повтор)",
+    "mode": "O",
+    "question_count": 3,
+    "created_at": "2025-05-17T12:52:33.264Z",
+    "start_time": "2025-05-17T12:52:33.264Z",
+    "end_time": "2025-05-17T12:53:33.336Z",
+    "status": "C",
+    "duration": 60
+  }
+},
+{
+  "model": "quiz.sessionquestion",
+  "pk": 118,
+  "fields": {
+    "session": 17,
+    "question": 1,
+    "order": 0
+  }
+},
+{
+  "model": "quiz.sessionquestion",
+  "pk": 119,
+  "fields": {
+    "session": 17,
+    "question": 2,
+    "order": 1
+  }
+},
+{
+  "model": "quiz.sessionquestion",
+  "pk": 120,
+  "fields": {
+    "session": 17,
+    "question": 3,
+    "order": 2
+  }
+},
+{
+  "model": "quiz.sessionquestion",
+  "pk": 121,
+  "fields": {
+    "session": 18,
+    "question": 1,
+    "order": 0
+  }
+},
+{
+  "model": "quiz.sessionquestion",
+  "pk": 122,
+  "fields": {
+    "session": 18,
+    "question": 2,
+    "order": 1
+  }
+},
+{
+  "model": "quiz.sessionquestion",
+  "pk": 123,
+  "fields": {
+    "session": 18,
+    "question": 3,
+    "order": 2
+  }
+},
+{
+  "model": "quiz.useranswer",
+  "pk": 123,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "session": 17,
+    "question": 1,
+    "selected_option": "",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.useranswer",
+  "pk": 124,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "session": 17,
+    "question": 2,
+    "selected_option": "",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.useranswer",
+  "pk": 125,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "session": 17,
+    "question": 3,
+    "selected_option": "",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.useranswer",
+  "pk": 126,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "session": 18,
+    "question": 1,
+    "selected_option": "",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.useranswer",
+  "pk": 127,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "session": 18,
+    "question": 2,
+    "selected_option": "",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz.useranswer",
+  "pk": 128,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "session": 18,
+    "question": 3,
+    "selected_option": "",
+    "is_correct": false
+  }
+}
+]
