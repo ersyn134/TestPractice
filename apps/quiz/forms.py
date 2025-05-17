@@ -15,6 +15,13 @@ class QuestionForm(forms.ModelForm):
         }
 
 class SessionForm(forms.ModelForm):
+    duration_minutes = forms.IntegerField(
+        label='Время на тренировку (минуты)',
+        min_value=1,
+        max_value=180,
+        required=False,
+        initial=10
+    )
     class Meta:
         model = Session
         fields = ['mode', 'question_count','name']

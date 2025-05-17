@@ -12,11 +12,11 @@ def register_view(request):
             return redirect('home')  # страница после входа
     else:
         form = UserCreationForm()
-    return render(request, 'register.html', {'form': form})
+    return render(request, 'accounts/register.html', {'form': form})
 
 def home_view(request):
-    return render(request, 'home.html')
+    return render(request, 'accounts/../../templates/home.html')
 
 @login_required
 def profile_view(request):
-    return render(request, 'profile.html')
+    return render(request, 'accounts/profile.html')
