@@ -1,65 +1,31 @@
 {% extends 'base.html' %}
-
-{% block title %}Добавить вопрос{% endblock %}
-
+{% block title %}{{ form.instance.pk|yesno:"Редактировать вопрос,Добавить вопрос" }}{% endblock %}
 {% block content %}
 <div class="container mt-4">
-  <h2>Добавить новый вопрос</h2>
-
+  <h2>{{ form.instance.pk|yesno:"Редактировать вопрос,Добавить вопрос" }}</h2>
   <form method="post" novalidate>
     {% csrf_token %}
-
-    <!-- Текст вопроса -->
+    {{ form.non_field_errors }}
     <div class="mb-3">
-      <label for="id_text" class="form-label">Текст вопроса</label>
-      <textarea class="form-control {% if form.text.errors %}is-invalid{% endif %}" id="id_text" name="text" rows="3">{{ form.text.value }}</textarea>
-      {% for error in form.text.errors %}
-        <div class="invalid-feedback">{{ error }}</div>
-      {% endfor %}
+      {{ form.text.label_tag }}
+      {{ form.text }}
+      {{ form.text.errors }}
     </div>
-
-    <!-- Варианты ответов -->
     <div class="mb-3">
-      <label class="form-label">Варианты ответов</label>
-
-      <input type="text" name="option_a" class="form-control mb-2 {% if form.option_a.errors %}is-invalid{% endif %}" placeholder="Вариант A" value="{{ form.option_a.value }}">
-      {% for error in form.option_a.errors %}
-        <div class="invalid-feedback">{{ error }}</div>
-      {% endfor %}
-
-      <input type="text" name="option_b" class="form-control mb-2 {% if form.option_b.errors %}is-invalid{% endif %}" placeholder="Вариант B" value="{{ form.option_b.value }}">
-      {% for error in form.option_b.errors %}
-        <div class="invalid-feedback">{{ error }}</div>
-      {% endfor %}
-
-      <input type="text" name="option_c" class="form-control mb-2 {% if form.option_c.errors %}is-invalid{% endif %}" placeholder="Вариант C" value="{{ form.option_c.value }}">
-      {% for error in form.option_c.errors %}
-        <div class="invalid-feedback">{{ error }}</div>
-      {% endfor %}
-
-      <input type="text" name="option_d" class="form-control {% if form.option_d.errors %}is-invalid{% endif %}" placeholder="Вариант D" value="{{ form.option_d.value }}">
-      {% for error in form.option_d.errors %}
-        <div class="invalid-feedback">{{ error }}</div>
-      {% endfor %}
+      <label class="form-label">Варианты ответа</label>
+      {{ form.option_a }} {{ form.option_a.errors }}
+      {{ form.option_b }} {{ form.option_b.errors }}
+      {{ form.option_c }} {{ form.option_c.errors }}
+      {{ form.option_d }} {{ form.option_d.errors }}
     </div>
-
-    <!-- Правильный вариант -->
     <div class="mb-3">
-      <label for="id_correct_option" class="form-label">Правильный вариант</label>
-      <select class="form-select {% if form.correct_option.errors %}is-invalid{% endif %}" id="id_correct_option" name="correct_option">
-        <option value="" disabled {% if not form.correct_option.value %}selected{% endif %}>Выберите правильный вариант</option>
-        <option value="A" {% if form.correct_option.value == "A" %}selected{% endif %}>Вариант A</option>
-        <option value="B" {% if form.correct_option.value == "B" %}selected{% endif %}>Вариант B</option>
-        <option value="C" {% if form.correct_option.value == "C" %}selected{% endif %}>Вариант C</option>
-        <option value="D" {% if form.correct_option.value == "D" %}selected{% endif %}>Вариант D</option>
-      </select>
-      {% for error in form.correct_option.errors %}
-        <div class="invalid-feedback">{{ error }}</div>
-      {% endfor %}
+      {{ form.correct_text.label_tag }}
+      {{ form.correct_text }}
+      {{ form.correct_text.errors }}
     </div>
-
-    <!-- Кнопка отправки -->
-    <button type="submit" class="btn btn-primary">Добавить вопрос</button>
+    <button type="submit" class="btn btn-primary">
+      {% if form.instance.pk %}Сохранить{% else %}Добавить{% endif %}
+    </button>
   </form>
 </div>
 {% endblock %}

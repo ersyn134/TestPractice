@@ -1,63 +1,41 @@
 from django.contrib.auth.decorators import login_required
-from django.core.paginator import Paginator
-from django.db.models import Q
 from django.shortcuts import render, redirect, get_object_or_404
-from apps.quiz.forms import QuestionForm
 from apps.quiz.models import Question
-
-
+from apps.quiz.forms import QuestionForm
 @login_required
 def add_question(request):
     if request.method == 'POST':
         form = QuestionForm(request.POST)
         if form.is_valid():
-            question = form.save(commit=False)
-            question.user = request.user  # Привязываем к пользователю
-            question.save()
-            return redirect('home')
+            q = form.save(commit=False)
+            q.user = request.user
+            q.save()
+            return redirect('questions_list')
     else:
         form = QuestionForm()
     return render(request, 'questions/add_question.html', {'form': form})
 
-def list_questions(request):
-    search_query = request.GET.get('q', '')
-    date_filter = request.GET.get('date', '')
-
-    questions = Question.objects.filter(user=request.user)
-
-    if search_query:
-        questions = questions.filter(text__icontains=search_query)
-
-    if date_filter:
-        questions = questions.filter(created_at__date=date_filter)
-
-    # Пагинация
-    paginator = Paginator(questions.order_by('created_at'), 5)  # 5 вопросов на страницу
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-
-    return render(request, 'questions/questions_list.html', {
-        'page_obj': page_obj,
-        'search_query': search_query,
-        'date_filter': date_filter,
-    })
-
+@login_required
 def edit_question(request, id):
-    question = get_object_or_404(Question, id=id, user=request.user)
+    q = get_object_or_404(Question, id=id, user=request.user)
     if request.method == 'POST':
-        form = QuestionForm(request.POST, instance=question)
+        form = QuestionForm(request.POST, instance=q)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            return redirect('questions_list')
     else:
-        form = QuestionForm(instance=question)
-
+        form = QuestionForm(instance=q)
     return render(request, 'questions/edit_question.html', {'form': form})
 
+@login_required
 def delete_question(request, id):
-    question = get_object_or_404(Question, id=id, user=request.user)
+    q = get_object_or_404(Question, id=id, user=request.user)
     if request.method == 'POST':
-        question.delete()
-        return redirect('home')
+        q.delete()
+        return redirect('questions_list')
+    return render(request, 'questions/delete_question.html', {'question': q})
 
-    return render(request, 'questions/delete_question.html', {'question': question})
+@login_required
+def list_questions(request):
+    qs = Question.objects.filter(user=request.user).order_by('-created_at')
+    return render(request, 'questions/questions_list.html', {'questions': qs})

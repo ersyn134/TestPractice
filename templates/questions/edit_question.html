@@ -1,47 +1,31 @@
 {% extends 'base.html' %}
-
-{% load widget_tweaks %}
-
-
-{% block title %}Редактировать вопрос{% endblock %}
-
+{% block title %}{{ form.instance.pk|yesno:"Редактировать вопрос,Добавить вопрос" }}{% endblock %}
 {% block content %}
 <div class="container mt-4">
-  <h2>Редактировать вопрос</h2>
-
-  <form method="post">
+  <h2>{{ form.instance.pk|yesno:"Редактировать вопрос,Добавить вопрос" }}</h2>
+  <form method="post" novalidate>
     {% csrf_token %}
-
-    <!-- Ошибки формы -->
-    {% if form.non_field_errors %}
-      <div class="alert alert-danger">
-        {{ form.non_field_errors }}
-      </div>
-    {% endif %}
-
-    <!-- Текст вопроса -->
+    {{ form.non_field_errors }}
     <div class="mb-3">
-      <label class="form-label">Текст вопроса</label>
-      {{ form.text|add_class:"form-control" }}
+      {{ form.text.label_tag }}
+      {{ form.text }}
+      {{ form.text.errors }}
     </div>
-
-    <!-- Варианты ответа -->
     <div class="mb-3">
       <label class="form-label">Варианты ответа</label>
-      {{ form.option_a|add_class:"form-control mb-2" }}
-      {{ form.option_b|add_class:"form-control mb-2" }}
-      {{ form.option_c|add_class:"form-control mb-2" }}
-      {{ form.option_d|add_class:"form-control" }}
+      {{ form.option_a }} {{ form.option_a.errors }}
+      {{ form.option_b }} {{ form.option_b.errors }}
+      {{ form.option_c }} {{ form.option_c.errors }}
+      {{ form.option_d }} {{ form.option_d.errors }}
     </div>
-
-    <!-- Правильный вариант -->
     <div class="mb-3">
-      <label class="form-label">Правильный вариант</label>
-      {{ form.correct_option|add_class:"form-select" }}
+      {{ form.correct_text.label_tag }}
+      {{ form.correct_text }}
+      {{ form.correct_text.errors }}
     </div>
-
-    <button type="submit" class="btn btn-primary">Сохранить изменения</button>
-    <a href="{% url 'questions_list' %}" class="btn btn-secondary">Отмена</a>
+    <button type="submit" class="btn btn-primary">
+      {% if form.instance.pk %}Сохранить{% else %}Добавить{% endif %}
+    </button>
   </form>
 </div>
 {% endblock %}
