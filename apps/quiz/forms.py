@@ -5,7 +5,7 @@ from django import forms
 from .models import Question
 
 class QuestionForm(forms.ModelForm):
-    # вместо прежнего выбора буквы — выпадающий список по текстам option_*
+    #  выпадающий список по текстам option_*
     correct_text = forms.ChoiceField(label="Правильный ответ")
 
     class Meta:
@@ -29,7 +29,6 @@ class QuestionForm(forms.ModelForm):
             (self.instance.option_c, self.instance.option_c),
             (self.instance.option_d, self.instance.option_d),
         ]
-        # если это создание (instance ещё нет), заменяем тексты на пустые
         if not self.instance.pk:
             opts = [('', '— сначала заполните варианты —')]
         self.fields['correct_text'].choices = opts

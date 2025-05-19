@@ -15,7 +15,6 @@ class SessionAdmin(admin.ModelAdmin):
 class QuestionAdmin(admin.ModelAdmin):
     list_display = (
         'id', 'user', 'text',
-        # заменяем correct_option на correct_text
         'correct_text',
         'created_at'
     )
@@ -26,7 +25,6 @@ class QuestionAdmin(admin.ModelAdmin):
 class UserAnswerAdmin(admin.ModelAdmin):
     list_display = (
         'id', 'user', 'session', 'question',
-        # заменяем selected_option на selected_text
         'selected_text',
         'is_correct'
     )
