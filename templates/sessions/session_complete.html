@@ -1,37 +1,21 @@
 {% extends 'base.html' %}
-
 {% block content %}
 <div class="container mt-4">
   <h3>Сессия завершена!</h3>
   <p>Правильных ответов: {{ correct_count }} из {{ total }}</p>
-  <p>Время прохождения: {{ duration|floatformat:1 }} секунд</p>
-
+  <p>Время: {{ duration|floatformat:1 }} с.</p>
   <hr>
-
-  <h4>Ответы по вопросам:</h4>
-  {% for answer in answers %}
-    <div class="mb-4 p-3 border rounded {% if answer.is_correct %}border-success bg-light{% else %}border-danger bg-light{% endif %}">
-      <p><strong>Вопрос {{ forloop.counter }}:</strong> {{ answer.question.text }}</p>
-      <ul class="list-unstyled">
-        <li {% if answer.selected_option == 'A' %}class="{% if answer.is_correct %}text-success{% else %}text-danger{% endif %}"{% endif %}>
-          A. {{ answer.question.option_a }}
-          {% if answer.question.correct_option == 'A' and answer.selected_option != 'A' %}<span class="text-success">(верный)</span>{% endif %}
-        </li>
-        <li {% if answer.selected_option == 'B' %}class="{% if answer.is_correct %}text-success{% else %}text-danger{% endif %}"{% endif %}>
-          B. {{ answer.question.option_b }}
-          {% if answer.question.correct_option == 'B' and answer.selected_option != 'B' %}<span class="text-success">(верный)</span>{% endif %}
-        </li>
-        <li {% if answer.selected_option == 'C' %}class="{% if answer.is_correct %}text-success{% else %}text-danger{% endif %}"{% endif %}>
-          C. {{ answer.question.option_c }}
-          {% if answer.question.correct_option == 'C' and answer.selected_option != 'C' %}<span class="text-success">(верный)</span>{% endif %}
-        </li>
-        <li {% if answer.selected_option == 'D' %}class="{% if answer.is_correct %}text-success{% else %}text-danger{% endif %}"{% endif %}>
-          D. {{ answer.question.option_d }}
-          {% if answer.question.correct_option == 'D' and answer.selected_option != 'D' %}<span class="text-success">(верный)</span>{% endif %}
-        </li>
-      </ul>
+  <h4>Детали ответов</h4>
+  {% for ans in answers %}
+    <div class="mb-3 p-3 border rounded
+       {% if ans.is_correct %}border-success bg-light{% else %}border-danger bg-light{% endif %}">
+      <p><strong>Вопрос {{ forloop.counter }}:</strong> {{ ans.question.text }}</p>
+      <p>Ваш ответ: <span class="{% if ans.is_correct %}text-success{% else %}text-danger{% endif %}">{{ ans.selected_text|default:"(не отвечено)" }}</span></p>
+      {% if not ans.is_correct %}
+        <p>Правильный ответ: <span class="text-success">{{ ans.question.correct_text }}</span></p>
+      {% endif %}
     </div>
   {% endfor %}
-
   <a href="{% url 'home' %}" class="btn btn-primary">На главную</a>
+</div>
 {% endblock %}

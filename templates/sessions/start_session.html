@@ -1,34 +1,58 @@
 {% extends 'base.html' %}
-
 {% block content %}
 <div class="container mt-4">
     <h2>Начать новую тренировку</h2>
 
-    <form method="post">
+    <form method="post" id="session-form">
         {% csrf_token %}
         <div class="mb-3">
-            <label for="name" class="form-label">Название сессии:</label>
-            <input type="text" name="name" id="name" class="form-control" placeholder="Например: Подготовка к экзамену">
-        </div>
-        <div class="mb-3">
-            <label for="id_duration_minutes">Время на тренировку (минуты):</label>
-            <input type="number" name="duration_minutes" id="id_duration_minutes" min="1" max="180" value="10" class="form-control">
-        </div>
-        <div class="mb-3">
-            <label for="mode" class="form-label">Режим прохождения:</label>
-            <select name="mode" id="mode" class="form-select" required>
-                <option value="O">По порядку</option>
-                <option value="R">Случайно</option>
-            </select>
+            <label for="id_name" class="form-label">Название сессии:</label>
+            {{ form.name }}
         </div>
 
         <div class="mb-3">
-            <label for="question_count" class="form-label">Количество вопросов:</label>
-            <input type="number" name="question_count" id="question_count" class="form-control" min="1" max="{{ total_questions }}" required>
+            <label for="id_duration_minutes" class="form-label">Время на тренировку (минуты):</label>
+            {{ form.duration_minutes }}
+        </div>
+
+        <div class="mb-3">
+            <label for="id_mode" class="form-label">Режим прохождения:</label>
+            {{ form.mode }}
+            <div class="form-text">
+                <strong>По порядку (O)</strong> — обычная последовательность ваших вопросов.<br>
+                <strong>Случайно (R)</strong> — случайные вопросы из ваших.<br>
+                <strong>Вариант (V)</strong> — один случайный из заранее созданных вариантов (по 30 вопросов).
+            </div>
+        </div>
+
+        <div class="mb-3" id="question-count-field">
+            <label for="id_question_count" class="form-label">Количество вопросов:</label>
+            {{ form.question_count }}
             <div class="form-text">Максимум {{ total_questions }} вопросов</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="id_option_order" class="form-label">Порядок вариантов ответа:</label>
+            {{ form.option_order }}
         </div>
 
         <button type="submit" class="btn btn-primary">Начать тренировку</button>
     </form>
 </div>
+
+<script>
+    const modeSelect = document.getElementById('id_mode');
+    const questionCountField = document.getElementById('question-count-field');
+
+    function toggleQuestionCountField() {
+        if (modeSelect.value === 'V') {
+            questionCountField.style.display = 'none';
+        } else {
+            questionCountField.style.display = 'block';
+        }
+    }
+
+    modeSelect.addEventListener('change', toggleQuestionCountField);
+    document.addEventListener('DOMContentLoaded', toggleQuestionCountField);
+</script>
 {% endblock %}
